@@ -1,0 +1,101 @@
+/******BASICS******/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.normalcase {
+    text-transform: initial;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.no-padding {
+    padding: 0!important;
+}
+
+/******LIST_POLICES******/
+
+.overlock {
+    font-family: 'Overlock', cursive;
+}
+
+.dosis {
+    font-family: 'Dosis', sans-serif;;
+}
+
+.overpass {
+    font-family: 'Overpass', sans-serif;;
+}
+
+.Source_sans_pro {
+    font-family: 'Source Sans Pro', sans-serif;;
+}
+
+/******LIST_COLOURS******/
+
+.corail {
+    color: #e74b36;
+}
+
+.corail_bg {
+    background-color: #e74b36;
+}
+
+.vert_code {
+    color: #2e9a97;
+}
+
+.vert_code_bg {
+    background-color: #2e9a97;
+}
+
+.vert_eau {
+    color: #bcd5c7;
+}
+
+.vert_eau_bg {
+    background-color: #bcd5c7;
+}
+
+.bleu_nuit {
+    color: #12316d;
+}
+
+.bleu_nuit_bg {
+    background-color: #12316d;
+}
+
+.taupe {
+    color: #927d77;
+}
+
+.taupe_bg {
+    background-color: #927d77;
+}
+
+.noir_pur {
+    color: #1a181b;
+}
+
+.noir_pur_bg {
+    background-color: #1a181b;
+}
+
+.blanc_pur {
+    color: #ffffff;
+}
+
+.blanc_pur_bg {
+    background-color: #ffffff;
+}
