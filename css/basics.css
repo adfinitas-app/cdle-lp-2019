@@ -26,20 +26,8 @@ html, body {
 
 /******LIST_POLICES******/
 
-.overlock {
-    font-family: 'Overlock', cursive;
-}
-
-.dosis {
-    font-family: 'Dosis', sans-serif;;
-}
-
-.overpass {
-    font-family: 'Overpass', sans-serif;;
-}
-
-.Source_sans_pro {
-    font-family: 'Source Sans Pro', sans-serif;;
+.Montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
 
 /******LIST_COLOURS******/
@@ -98,4 +86,12 @@ html, body {
 
 .blanc_pur_bg {
     background-color: #ffffff;
+}
+
+.jaune {
+    color: #f9b000;
+}
+
+.jaune_bg {
+    background-color: #f9b000;
 }

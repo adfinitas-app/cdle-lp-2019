@@ -1,0 +1,136 @@
+/*****  CSS Dons  *****/
+
+.title_don_1 {
+    color: white;
+    font-size: 35px;
+}
+
+.title_don_2 {
+    color: white;
+    font-size: 45px;
+}
+
+.column_don_don {
+    text-align: center;
+    height: 100%;
+}
+
+.column_don_don_inside {
+    background-color: white;
+    height: 90%;
+}
+
+#column_don_don_left {
+    padding-left: 15px;
+    padding-right: 7.5px;
+    height: 100%;
+}
+
+#column_don_don_center {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 100%;
+}
+
+#column_don_don_right {
+    padding-left: 7.5px;
+    padding-right: 15px;
+    height: 100%;
+}
+
+.number_don_central {
+    padding-top: 20px;
+    text-align: right;
+    font-size: 85px;
+}
+
+.description_column_don {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.6vw;
+}
+
+.don_zoom {
+    transition: all .2s ease-in-out;
+}
+
+.don_zoom:hover {
+    transform: scale(1.05);    
+}
+
+.fiscale_don {
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.real_price_don {
+    font-size: 17px; position: absolute; left: 20px; top: 5px; height: 50px; width: 50px;
+    -webkit-transform: rotate(75deg);
+    -moz-transform: rotate(75deg);
+    -o-transform: rotate(75deg);
+    -ms-transform: rotate(75deg);
+    transform: rotate(75deg);
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.rotate_75_don {
+    -webkit-transform: rotate(-75deg);
+    -moz-transform: rotate(-75deg);
+    -o-transform: rotate(-75deg);
+    -ms-transform: rotate(-75deg);
+    transform: rotate(-75deg);
+}
+
+.link_footer_don:hover {
+    color: #1a181b;
+}
+
+.reduc_don {
+    font-size: 1.2vw;
+}
+
+@media(min-width:1600px) {
+    .description_column_don {
+        height: 300px;
+        max-height: 300px;
+    }
+}
+
+@media(max-width:1200px) {
+    .description_column_don {
+        height: 155px;
+        max-height: 155px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .description_column_don {
+        font-size: 4vw;
+    }
+    .column_don_don {
+        margin-bottom: 50px;
+    }
+    #column_don_don_left, #column_don_don_center, #column_don_don_right{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .group_column_don, .reduc_don, .titles_don {
+        background-color: #2e9a97;
+    }
+    .reduc_don {
+        font-size: 2vw;
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .description_column_don {
+        font-size: 5vw;
+    }
+    .reduc_don {
+        font-size: 3vw;
+        padding-left: 20px;
+    }
+}
