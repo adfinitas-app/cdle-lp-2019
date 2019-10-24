@@ -1,0 +1,46 @@
+.don_t-shirt {
+    height: 60px;
+    width: 200px;
+    line-height: 60px;
+    color: black;
+    vertical-align: middle;
+    font-size: 20px;
+    margin: auto;
+    border-radius: 100px;
+    transition: all .2s ease-in-out;
+
+}
+
+.don_t-shirt:hover {
+    transform: scale(1.05);    
+}
+
+.height_t-shirt {
+    height: 525px;
+    max-height: 525px;
+}
+
+.img_t-shirt {
+    height: 100%;
+}
+
+#click_t-shirt {
+    bottom: 50px;
+}
+
+@media screen and (max-width: 968px) {
+    .height_t-shirt {
+        height: auto;
+        max-height: 100%;
+    }
+    .img_t-shirt {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    #click_t-shirt {
+        bottom: 10px;
+    }
+}
