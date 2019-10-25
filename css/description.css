@@ -1,0 +1,8 @@
+/*******  Description  *******/
+
+.imgKid:hover {
+    border: 7px #f9b000 solid;
+    width: 214px;
+    height: 214px;
+    border-radius: 107px;
+}

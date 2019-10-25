@@ -1,0 +1,26 @@
+/*******  footer  *******/
+
+.nbr_footer {
+    font-size: 50px;
+    line-height: 45px;
+}
+
+.desc_nbr {
+    font-size: 15px;
+}
+
+@media (max-width: 1001px) {
+    #footer-left {
+        text-align: center !important;
+    }
+
+    #footer-right {
+        text-align: center !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    #desc-chiffresCles {
+        padding-right: 100px;
+    }
+}

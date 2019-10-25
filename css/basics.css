@@ -32,52 +32,12 @@ html, body {
 
 /******LIST_COLOURS******/
 
-.corail {
-    color: #e74b36;
-}
-
-.corail_bg {
-    background-color: #e74b36;
-}
-
-.vert_code {
-    color: #2e9a97;
-}
-
-.vert_code_bg {
-    background-color: #2e9a97;
-}
-
-.vert_eau {
-    color: #bcd5c7;
-}
-
-.vert_eau_bg {
-    background-color: #bcd5c7;
-}
-
-.bleu_nuit {
-    color: #12316d;
-}
-
-.bleu_nuit_bg {
-    background-color: #12316d;
-}
-
-.taupe {
-    color: #927d77;
-}
-
-.taupe_bg {
-    background-color: #927d77;
-}
-
 .noir_pur {
-    color: #1a181b;
+    color: #000000;
 }
 
 .noir_pur_bg {
-    background-color: #1a181b;
+    background-color: #000000;
 }
 
 .blanc_pur {
@@ -94,4 +54,8 @@ html, body {
 
 .jaune_bg {
     background-color: #f9b000;
+}
+
+.grey {
+    color: #808080;
 }
