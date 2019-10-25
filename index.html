@@ -6,6 +6,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/header.css">
     <link rel="stylesheet" type="text/css" href="css/video.css">
     <link rel="stylesheet" type="text/css" href="css/description.css">
@@ -17,8 +18,381 @@
 </head>
 
 <body>
+    <!--VIDEO-->
+    <div class="container-fluid"
+        style="height: 100vh; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;"
+        id="video_div">
+        <video width="100%" height="auto" poster="assets/video_miniature.png" id="video">
+            <source src="assets/20-km-de-paris-solidaires.mp4" type="video/mp4" />
+        </video>
+        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100px; width: 100px; margin: auto; border-radius: 50px; cursor: pointer;"
+            class="jaune_bg play_button_video">
+            <img src="assets/play.png" height="50%"
+                style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+        </div>
+    </div>
+    <!--DON-->
+    <div class="container-fluid" style="min-height: 100vh; width: 100%; background-color: rgba(249, 176, 0, 0.8)">
+        <div class="row titles_don" style="min-height: 20vh;">
+            <div class="col-lg-12 text-center"
+                style="color: white; vertical-align: middle; line-height: 5vh; padding-top: 10vh;">
+                <span class="title_don_1 Montserrat bold"><span class="noir_pur">PASSEZ</span> L'ESPOIR</span><br>
+            </div>
+        </div>
+        <div class="row group_column_don" style="min-height: 450px;">
+            <div class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+                <div class="col-sm-4 col-lg-4 column_don_don">
+                    <div class="row" id="column_don_don_center">
+                        <div class="col-lg-12 column_don_don_inside">
+                            <div class="row" style="height: 80%;">
+                                <div class="col-lg-12">
+                                    <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
+                                        <div class="real_price_don"></div>
+                                        <div class="rotate_75_don Montserrat">15€*</div>
+                                        <div class="col-xs-12 black"
+                                            style="display: flex; margin: auto; justify-content: center;">
+                                            60<div style="font-size: 55px; padding-top: 10px;">€</div>
+                                        </div>
+                                    </div>
+                                    <div style="min-height: 60%; margin-bottom: 15px;"
+                                        class="description_column_don text-center Montserrat noir_pur">
+                                        Si 9 personnes font un don de 60€ avec vous, vous permettez à un enfant d'être
+                                        opéré d'un « bec de lièvre » dans son pays.<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 15%;">
+                                <div class="col-lg-12" style="margin-bottom: 10px;">
+                                    <a href="" target="_blank"
+                                        style="display:block; margin: auto; text-decoration: none;" id="link_don">
+                                        <div style="height: 80%; position: relative; width: 100%; margin: auto; border-radius: 50px;"
+                                            class="jaune_bg don_zoom">
+                                            <span class="uppercase bold noir_pur Montserrat"
+                                                style="font-size: 20px; line-height: 70px; vertical-align: middle;">je
+                                                fais
+                                                un
+                                                don</span>
+                                        </div>
+                                    </a>
+                                    <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 column_don_don">
+                    <div class="row" id="column_don_don_center">
+                        <div class="col-lg-12 column_don_don_inside">
+                            <div class="row" style="height: 80%;">
+                                <div class="col-lg-12">
+                                    <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
+                                        <div class="real_price_don"></div>
+                                        <div class="rotate_75_don Montserrat">21€*</div>
+                                        <div class="col-xs-12 black"
+                                            style="display: flex; margin: auto; justify-content: center;">
+                                            85<div style="font-size: 55px; padding-top: 10px;">€</div>
+                                        </div>
+                                    </div>
+                                    <div style="min-height: 60%; margin-bottom: 15px;"
+                                        class="description_column_don text-center Montserrat noir_pur">
+                                        Si 34 personnes font un don de 85€ avec vous, vous permettez à un enfant
+                                        cardiaque d'être opéré sur place.<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 15%;">
+                                <div class="col-lg-12" style="margin-bottom: 10px;">
+                                    <a href="" target="_blank"
+                                        style="display:block; margin: auto; text-decoration: none;" id="link_don">
+                                        <div style="height: 80%; position: relative; width: 100%; margin: auto; border-radius: 50px;"
+                                            class="jaune_bg don_zoom">
+                                            <span class="uppercase bold noir_pur Montserrat"
+                                                style="font-size: 20px; line-height: 70px; vertical-align: middle;">je
+                                                fais
+                                                un
+                                                don</span>
+                                        </div>
+                                    </a>
+                                    <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-lg-4 column_don_don">
+                    <div class="row" id="column_don_don_center">
+                        <div class="col-lg-12 column_don_don_inside">
+                            <div class="row" style="height: 80%;">
+                                <div class="col-lg-12">
+                                    <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
+                                        <div class="real_price_don"></div>
+                                        <div class="rotate_75_don Montserrat">30€*</div>
+                                        <div class="col-xs-12 black"
+                                            style="display: flex; margin: auto; justify-content: center;">
+                                            120<div style="font-size: 55px; padding-top: 10px;">€</div>
+                                        </div>
+                                    </div>
+                                    <div style="min-height: 60%; margin-bottom: 15px;"
+                                        class="description_column_don text-center Montserrat noir_pur">
+                                        Si 99 personnes font un don de 120€ avec vous, vous permettez à un enfant d'être
+                                        transféré et opéré en France.<br>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 15%;">
+                                <div class="col-lg-12" style="margin-bottom: 10px;">
+                                    <a href="" target="_blank"
+                                        style="display:block; margin: auto; text-decoration: none;" id="link_don">
+                                        <div style="height: 80%; position: relative; width: 100%; margin: auto; border-radius: 50px;"
+                                            class="jaune_bg don_zoom">
+                                            <span class="uppercase bold noir_pur Montserrat"
+                                                style="font-size: 20px; line-height: 70px; vertical-align: middle;">je
+                                                fais
+                                                un
+                                                don</span>
+                                        </div>
+                                    </a>
+                                    <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--T-SHIRT-->
+    <div class="container-fluid" style="max-height: 100vh; width: 100%; background-color: black;">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-xs-12 col-sm-12 col-lg-4 text-center blanc_pur Montserrat"
+                style="height: 525px; max-height: 525px; padding-top: 95px;">
+                <div style="height: 380px;">
+                    <span class="uppercase blanc_pur bold" style="font-size: 30px; line-height: 30px;"><span
+                            class="jaune">portez</span><br>l'espoir</span>
+                    <hr style="width: 10vw; border-color: #f9b000; border-top: 3px solid #f9b000;" />
+                    <span style="font-size: 20px; line-height: 22px;">Recevez ce T-shirt<br>pour tout don de<br>+de
+                        90€<br></span>
+                    <br>
+                    <a href="" target="_blank" style="text-decoration: none;">
+                        <div class="jaune_bg don_t-shirt uppercase text-center bold">
+                            je donne
+                        </div>
+                    </a>
+                    <br>
+                    <span>Réservé aux 480 premiers<br>donateurs ayant fait un don de<br>plus de 90€. T-shirts en taille
+                        M.</span>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-lg-7 height_t-shirt">
+                <div class="jaune"
+                    style="display: flex; align-items: baseline; position: absolute; font-size: 15px; cursor: pointer;"
+                    id="click_t-shirt">voir le dos <img src="assets/shape_t-shirt.png" width="20px"
+                        style="margin-left: 5px;"></div>
+                <img src="assets/t-shirt-front.png" class="img_t-shirt" style="margin: auto;">
+            </div>
+        </div>
+    </div>
+    <!--FOOTER-->
+    <form id="footer blanc_pur_bg">
+        <div class="row">
+            <div class="col-lg-12" style="padding-top: 60px">
+                <div class="row">
+                    <div class="col-lg-3 col-xs-12" style="margin-bottom: 40px" id="desc-chiffresCles">
+                        <div style="margin-left: 80px">
+                            <span class="Montserrat jaune bold uppercase" style="font-size: 50px;">chiffres<br /></span>
+                            <span class="Montserrat noir_pur bold uppercase" style="font-size: 50px;">clés<br /></span>
+                            <div
+                                style="width: 200px; height: 1px; border-width: 2px; border-radius: 2px; border-color: black; border-style: solid">
+                            </div>
+                            <span class="Montserrat noir_pur" style="font-size: 18px">
+                                <br />La Chaîne de l’Espoir est une association française qui vient en aide aux enfants
+                                démunis. Depuis 1994, nous agissons dans le monde entier pour leur donner accès aux
+                                soins.
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-9 col-xs-12" style="padding-top: 15px">
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <img src="./assets/hands.png" alt="handshake">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class=" jaune nbr_footer bold Montserrat">24</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="Montserrat noir_pur desc_nbr bold">Années d'actions<br />sur le
+                                            terrain</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px; min-height: 126px;">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-bottom: 4px">
+                                        <img src="./assets/scissors.png" alt="ciseaux">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="jaune nbr_footer bold Montserrat">5 800</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="Montserrat noir_pur desc_nbr bold">Enfants opérés</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-bottom: 7px">
+                                        <img src="./assets/health.png" alt="santé">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="jaune nbr_footer bold Montserrat">200 000</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="Montserrat noir_pur desc_nbr bold">Enfants bénéficiaires
+                                            des<br />programmes de soins / an</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-bottom: 5px">
+                                        <img src="./assets/world.png" alt="monde">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="jaune nbr_footer bold Montserrat">170</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span
+                                            class="Montserrat noir_pur desc_nbr bold">Missions<br />internationales</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-bottom: 1px">
+                                        <img src="./assets/doctor.png" alt="docteur">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="jaune nbr_footer bold Montserrat">250</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="Montserrat noir_pur desc_nbr bold">Personnels médicaux
+                                            et<br />paramédicaux bénévoles</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-xs-6" style="margin-bottom: 40px">
+                            <center>
+                                <div class="row">
+                                    <div class="col-lg-12" style="margin-bottom: 2px">
+                                        <img src="./assets/family.png" alt="famille">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="jaune nbr_footer bold Montserrat">300</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <span class="Montserrat noir_pur desc_nbr bold">famills d'acceuil<br />bénévoles
+                                            mobilisées<br />partout en France</span>
+                                    </div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr style="border-color: #d7D7D7; border-width: 2px">
+                    <div class="col-lg-2 col-md-12 col-xs-12" style="text-align: center; align-items: center">
+                        <center>
+                            <img src="assets/LogoFooter.png" alt="logo Chaine de l'espoir">
+                        </center>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-4 col-xs-12" style="padding-top: 45px; text-align: right"
+                                id="footer-left">
+                                <a href="" target="_blank">
+                                    <span class="uppercase grey">la chaîne de l'espoir</span>
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12" style="padding-top: 45px">
+                                <center>
+                                    <a href="" target="_blank">
+                                        <span class="uppercase grey">nous contacter</span>
+                                    </a>
+                                </center>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-xs-12" style="padding-top: 45px" id="footer-right">
+                                <a href="" target="_blank">
+                                    <span class="uppercase grey">mentions légales</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-4 col-xs-4 col-xs-offset-4"
+                        style="padding-top: 34px; margin-bottom: 20px">
+                        <div class="row">
+                            <div class="col-lg-4 col-xs-4 no-padding" style="text-align: right;">
+                                <a href="" target="_blank">
+                                    <img src="assets/fb.png" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-xs-4 no-padding" style="text-align: center; align-items: center">
+                                <a href="" target="_blank">
+                                    <img src="assets/tw.png" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="col-lg-4 col-xs-4 no-padding" style="text-align: left;  ">
+                                <a href="" target="_blank">
+                                    <img src="assets/inst.png" style="width: 40px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/t-shirt.js"></script>
+<script src="js/video.js"></script>
+
 
 </html>

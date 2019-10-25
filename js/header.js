@@ -948,8 +948,8 @@
             domContainers[0].width = w * pRatio * sRatio;			
             domContainers[0].height = h * pRatio * sRatio;    			
             domContainers.forEach(function(container) {				
-                container.style.width = w * sRatio + 'px';				
-                container.style.height = h * sRatio + 'px';		
+                container.style.width = "100%";				
+                container.style.height = "auto";		
                 container.style.width = "100%!important";	
             });
             stage.scaleX = pRatio*sRatio;			
