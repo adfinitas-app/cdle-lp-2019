@@ -1,5 +1,49 @@
-canvas { 
+.canvas { 
     height: 100vh; 
     width: 100vw; 
     display: block;
-  }
+}
+
+#sticky_don {
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#don_button_header {
+    width: 100%;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+#don_button_header:hover {
+    transform: scale(1.05);    
+}
+
+@media screen and (max-width: 968px) {
+    #don_button_header {
+        width: 70%;
+    }
+    #sticky_don {
+        position: fixed;
+        right: 10px;
+        top: 20px;
+        cursor: pointer;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #don_button_header {
+        width: 60%;
+    }
+    #sticky_don {
+        position: fixed;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        text-align: right;
+    }
+}

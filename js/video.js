@@ -29,8 +29,8 @@
         }
     });
     if (c != null) {
-        console.log("video")
-    } else {
-        console.log("no video")
+        $('html, body').animate({
+            scrollTop: ($('#video').offset().top)
+        },1);
     }
 })();

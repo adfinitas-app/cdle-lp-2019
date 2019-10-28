@@ -5,6 +5,7 @@
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="authoring-tool" content="Adobe_Animate_CC">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/header.css">
@@ -17,12 +18,20 @@
     <link rel="stylesheet" type="text/css" href="css/basics.css">
 </head>
 
-<body>
+<body onload="init();" style="background-image: url(assets/background.png);; background-size: 100% auto; margin:0px;">
+    <!--HEADER-->
+    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:100vh">
+        <canvas id="canvas" width="100%!important" height="auto!important"
+            style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00); width: 100%!important;"></canvas>
+        <div id="dom_overlay_container"
+            style="pointer-events:none; overflow:hidden; width:1000px; height:564px; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+    </div>
     <!--VIDEO-->
     <div class="container-fluid"
-        style="height: 100vh; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;"
+        style="height: 100%; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;"
         id="video_div">
-        <video width="100%" height="auto" poster="assets/video_miniature.png" id="video">
+        <video width="100%" height="auto" id="video">
             <source src="assets/20-km-de-paris-solidaires.mp4" type="video/mp4" />
         </video>
         <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100px; width: 100px; margin: auto; border-radius: 50px; cursor: pointer;"
@@ -31,11 +40,76 @@
                 style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
         </div>
     </div>
+    <!--DESCRIPTION-->
+    <form id="footer" class="noir_pur_bg">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10" style="padding-top: 80px">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
+                        <span class="Montserrat bold uppercase" style="font-size: 45px; color: #f9b000; line-height: 50px; ">Rejoignez<br/>notre chaîne<br/></span>
+                        <span class="Montserrat blanc_pur bold uppercase" style="font-size: 45px; line-height: 50px; ">et sauvez<br/> des vies.<br/></span>
+                        <div style="width: 200px; height: 1px; border-width: 2px; border-radius: 2px; border-color: #f9b000; border-style: solid; margin-top: 15px"></div>
+                        <div style="padding-right: 80px">
+                            <span class="Montserrat blanc_pur" style="font-size: 18px;" >
+                                <br/>Partout dans le monde, des millions d’enfants sont condamnés faute d’accès à des soins médicaux. Pour les sauver, La Chaîne de l’Espoir vient en aide aux enfants démunis dans 30 pays.<br/><br/>
+                                Chaque année, nous soignons et opérons en France ou à l'étranger plus de 200 000 enfants.<br><br>
+                                Faites rayonner l'espoir par-delà les frontières et sauvez la vie d'un enfant comme Prénom, Prénom, Prénom ou Prénom.<br>
+                                Chacun de vos dons compte. Merci d'être à leurs côtés.<br><br>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-12 col-xs-12" style="padding-top: 40px">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+                                        AYO<br/><br>
+                                        <img src="assets/ayo.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Ayo" class="imgKid" id="linkAyo" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+                                        ANDY<br/><br>
+                                    <img src="assets/andy.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Andy" class="imgKid" id="linkAndy" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+                                        NITHA<br/><br>
+                                    <img src="assets/nitha.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Nitha" class="imgKid" id="linkNitha" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+    
+                                        LAURA<br/><br>
+                                    <img src="assets/laura.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Laura" class="imgKid" id="linkLaura" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+                                        MOMO<br/><br>
+                                    <img src="assets/momo.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Momo" class="imgKid" id="linkMomo" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
+                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
+                                        KONAN<br/><br>
+                                    <img src="assets/konan.png" onmouseover="changeColor(this)" onmouseout="changeBackColor(this)" alt="Konan" class="imgKid" id="linkKonan" style="width: 200px; height: 200px; border-radius: 100px">
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </form>
     <!--DON-->
     <div class="container-fluid" style="min-height: 100vh; width: 100%; background-color: rgba(249, 176, 0, 0.8)">
         <div class="row titles_don" style="min-height: 20vh;">
             <div class="col-lg-12 text-center"
-                style="color: white; vertical-align: middle; line-height: 5vh; padding-top: 10vh;">
+                style="color: white; vertical-align: middle; line-height: 5vh; margin-top: 10vh; margin-bottom: 100px;">
                 <span class="title_don_1 Montserrat bold"><span class="noir_pur">PASSEZ</span> L'ESPOIR</span><br>
             </div>
         </div>
@@ -162,7 +236,7 @@
         </div>
     </div>
     <!--T-SHIRT-->
-    <div class="container-fluid" style="max-height: 100vh; width: 100%; background-color: black;">
+    <div class="container-fluid" style="max-height: 100vh; width: 100%;">
         <div class="row">
             <div class="col-lg-1"></div>
             <div class="col-xs-12 col-sm-12 col-lg-4 text-center blanc_pur Montserrat"
@@ -194,9 +268,9 @@
         </div>
     </div>
     <!--FOOTER-->
-    <form id="footer blanc_pur_bg">
+    <form id="footer blanc_pur_bg" style="background-color: white;">
         <div class="row">
-            <div class="col-lg-12" style="padding-top: 60px">
+            <div class="col-lg-12 blanc_bg" style="padding-top: 60px">
                 <div class="row">
                     <div class="col-lg-3 col-xs-12" style="margin-bottom: 40px" id="desc-chiffresCles">
                         <div style="margin-left: 80px">
@@ -388,11 +462,19 @@
             </div>
         </div>
     </form>
+    <!--STICKY-->
+    <div id="sticky_don">
+        <img src="assets/BT.png" id="don_button_header">
+    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/t-shirt.js"></script>
 <script src="js/video.js"></script>
+<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+<script src="js/header.js"></script>
+<script src="js/description.js"></script>
+
 
 
 </html>
