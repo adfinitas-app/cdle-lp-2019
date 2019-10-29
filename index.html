@@ -18,7 +18,7 @@
     <link rel="stylesheet" type="text/css" href="css/basics.css">
 </head>
 
-<body onload="init();" style="background-image: url(assets/background.png);; background-size: 100% auto; margin:0px;">
+<body onload="init();" style="background-image: url(assets/background.png);; background-size: 100% auto; margin:0px; background-attachment: fixed;">
     <!--HEADER-->
     <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:100vh">
         <canvas id="canvas" width="100%!important" height="auto!important"
@@ -117,7 +117,8 @@
             <div class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
                 <div class="col-sm-4 col-lg-4 column_don_don">
                     <div class="row" id="column_don_don_center">
-                        <div class="col-lg-12 column_don_don_inside">
+                        <div class="col-lg-12 column_don_don_inside don_zoom">
+                            <a href="" target="_blank" class="don_zoom">
                             <div class="row" style="height: 80%;">
                                 <div class="col-lg-12">
                                     <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
@@ -151,12 +152,14 @@
                                     <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-lg-4 column_don_don">
                     <div class="row" id="column_don_don_center">
-                        <div class="col-lg-12 column_don_don_inside">
+                        <div class="col-lg-12 column_don_don_inside don_zoom">
+                            <a href="" target="_blank" class="don_zoom">                            
                             <div class="row" style="height: 80%;">
                                 <div class="col-lg-12">
                                     <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
@@ -190,12 +193,14 @@
                                     <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4 col-lg-4 column_don_don">
                     <div class="row" id="column_don_don_center">
-                        <div class="col-lg-12 column_don_don_inside">
+                        <div class="col-lg-12 column_don_don_inside don_zoom">
+                            <a href="" target="_blank" class="don_zoom">
                             <div class="row" style="height: 80%;">
                                 <div class="col-lg-12">
                                     <div class="row noir_pur dosis bold number_don_central" style="height: 40%;">
@@ -229,6 +234,7 @@
                                     <span class="fiscale_don"><br>* Montant après déduction fiscale de 75%</span>
                                 </div>
                             </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -236,10 +242,10 @@
         </div>
     </div>
     <!--T-SHIRT-->
-    <div class="container-fluid" style="max-height: 100vh; width: 100%;">
+    <div class="container-fluid" style="max-height: 100vh; width: 100%;" id="t-shirt_div_height">
         <div class="row">
             <div class="col-lg-1"></div>
-            <div class="col-xs-12 col-sm-12 col-lg-4 text-center blanc_pur Montserrat"
+            <div class="col-xs-12 col-sm-4 col-lg-4 text-center blanc_pur Montserrat"
                 style="height: 525px; max-height: 525px; padding-top: 95px;">
                 <div style="height: 380px;">
                     <span class="uppercase blanc_pur bold" style="font-size: 30px; line-height: 30px;"><span
@@ -258,7 +264,7 @@
                         M.</span>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-lg-7 height_t-shirt">
+            <div class="col-xs-12 col-sm-8 col-lg-7 height_t-shirt">
                 <div class="jaune"
                     style="display: flex; align-items: baseline; position: absolute; font-size: 15px; cursor: pointer;"
                     id="click_t-shirt">voir le dos <img src="assets/shape_t-shirt.png" width="20px"

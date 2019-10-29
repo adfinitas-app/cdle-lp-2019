@@ -951,7 +951,12 @@
                 container.style.width = "100%";				
                 container.style.height = "auto";
                 if (container.id == "animation_container") {
-                    container.style.height = "100vh";
+                    console.log(window.innerWidth)
+                    if (window.innerWidth < 1200) {
+                        container.style.height = "55vw";
+                    } else {
+                        container.style.height = "100vh";
+                    }
                 }
                 container.style.width = "100%!important";	
             });

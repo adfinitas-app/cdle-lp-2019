@@ -28,7 +28,7 @@
     bottom: 50px;
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 768px) {
     .height_t-shirt {
         height: auto;
         max-height: 100%;
@@ -36,6 +36,9 @@
     .img_t-shirt {
         height: auto;
         width: 100%;
+    }
+    #t-shirt_div_height {
+        max-height: none!important;
     }
 }
 
