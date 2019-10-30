@@ -2,18 +2,6 @@
 <html>
 
 <head>
-    <!-- Google Tag Manager -->
-    <script>
-        (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-KJSL95');
-    </script>
-    <!-- End Google Tag Manager -->
     <title></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width">
@@ -28,123 +16,124 @@
     <link rel="stylesheet" type="text/css" href="css/stats.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
     <link rel="stylesheet" type="text/css" href="css/basics.css">
+    <link rel="stylesheet" type="text/css" href="css/enfant.css">
 </head>
 
-<body onload="init();"
-    style="background-image: url(assets/background.png);; background-size: 100% auto; margin:0px; background-attachment: fixed;">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJSL95" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <!--HEADER-->
-    <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:1000px; height:100vh">
-        <canvas id="canvas" width="100%!important" height="auto!important"
-            style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00); width: 100%!important;"></canvas>
-        <div id="dom_overlay_container"
-            style="pointer-events:none; overflow:hidden; width:1000px; height:564px; position: absolute; left: 0px; top: 0px; display: block;">
-        </div>
-    </div>
-    <!--VIDEO-->
-    <div class="container-fluid"
-        style="height: 100%; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;"
-        id="video_div">
-        <video width="100%" height="auto" id="video">
-            <source src="assets/20-km-de-paris-solidaires.mp4" type="video/mp4" />
-        </video>
-        <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 100px; width: 100px; margin: auto; border-radius: 50px; cursor: pointer;"
-            class="jaune_bg play_button_video">
-            <img src="assets/play.png" height="50%"
-                style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
-        </div>
-    </div>
-    <!--DESCRIPTION-->
-    <form id="footer" class="noir_pur_bg">
-        <div class="row">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10" style="padding-top: 80px">
+<body style="background-color: white; margin:0px;">
+    <!--ENFANT-->
+    <div class="container-fluid">
+        <div class="row Montserrat" style="padding-top: 20px;">
+            <div class="col-sm-12 col-lg-1">
                 <div class="row">
-                    <div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
-                        <span class="Montserrat bold uppercase"
-                            style="font-size: 45px; color: #f9b000; line-height: 50px; ">Rejoignez<br />notre
-                            chaîne<br /></span>
-                        <span class="Montserrat blanc_pur bold uppercase"
-                            style="font-size: 45px; line-height: 50px; ">et sauvez<br /> des vies.<br /></span>
-                        <div
-                            style="width: 200px; height: 1px; border-width: 2px; border-radius: 2px; border-color: #f9b000; border-style: solid; margin-top: 15px">
-                        </div>
-                        <div style="padding-right: 80px">
-                            <span class="Montserrat blanc_pur" style="font-size: 18px;">
-                                <br />Partout dans le monde, des millions d’enfants sont condamnés faute d’accès à des
-                                soins médicaux. Pour les sauver, La Chaîne de l’Espoir vient en aide aux enfants démunis
-                                dans 30 pays.<br /><br />
-                                Chaque année, nous soignons et opérons en France ou à l'étranger plus de 200 000
-                                enfants.<br><br>
-                                Faites rayonner l'espoir par-delà les frontières et sauvez la vie d'un enfant comme
-                                Prénom, Prénom, Prénom ou Prénom.<br>
-                                Chacun de vos dons compte. Merci d'être à leurs côtés.<br><br>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 col-md-12 col-xs-12" style="padding-top: 40px">
-                        <div class="row">
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-                                    AYO<br /><br>
-                                    <img src="assets/ayo.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Ayo" class="imgKid" id="linkAyo"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-                                    ANDY<br /><br>
-                                    <img src="assets/andy.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Andy" class="imgKid" id="linkAndy"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-                                    NITHA<br /><br>
-                                    <img src="assets/nitha.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Nitha" class="imgKid" id="linkNitha"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-
-                                    LAURA<br /><br>
-                                    <img src="assets/laura.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Laura" class="imgKid" id="linkLaura"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-                                    MOMO<br /><br>
-                                    <img src="assets/momo.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Momo" class="imgKid" id="linkMomo"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                            <div class="col-lg-6 col-md-4 col-xs-12" style="margin-bottom: 40px">
-                                <center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-                                    KONAN<br /><br>
-                                    <img src="assets/konan.png" onmouseover="changeColor(this)"
-                                        onmouseout="changeBackColor(this)" alt="Konan" class="imgKid" id="linkKonan"
-                                        style="width: 200px; height: 200px; border-radius: 100px">
-                                </center>
-                            </div>
-                        </div>
+                    <div class="col-xs-12 col-sm-12 text-center">
+                        <img src="assets/logo.png" width="100px" height="auto" style="margin-bottom: 30px;">
                     </div>
                 </div>
             </div>
-            <div class="col-lg-1"></div>
+            <div class="col-sm-12 col-lg-11">
+                <div class="row">
+                    <div class="col-xs-12" style="display: flex; align-items: center; cursor: pointer; margin-bottom: 30px; padding-left: 100px; text-align: center;" id="retour_enfant">
+                        <img src="assets/shape_retour.png" width="25px" height="auto" style="margin-right: 10px;">
+                        <span class="uppercase bold" style="font-size: 16px; font-weight: 500;"> retour</span>
+                    </div>
+                    <div class="col-xs-12 col-sm-4">
+                        <div id="sticky_enfant">
+                            <div class="row text-center">
+                                    <img src="assets/momo.png" alt="Momo"
+                                    style="width: 200px; height: 200px; border-radius: 100px ; margin-bottom: 15px;">
+                            </div>
+                            <div class="row text-center">
+                                <a href="" target="_blank">
+                                    <img src="assets/BT.png" id="don_button_header" style="width: 35%; margin-bottom: 15px;">
+                                </a>
+                            </div>
+                            <div class="row text-center" style="font-size: 15px; font-weight: 700; opacity: 0.66; margin-bottom: 15px;">
+                                Je partage
+                            </div>
+                            <div class="row text-center" style="margin-bottom: 15px;">
+                                <a href="" target="_blank">
+                                    <img src="assets/fb.png" style="width: 40px;">
+                                </a>
+                            </div>
+                            <div class="row text-center">
+                                <a href="" target="_blank">
+                                    <img src="assets/tw.png" style="width: 40px;">
+                                </a>
+                                <br><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 padding_30">
+                        <div class="row jaune uppercase bold" style="font-size: 35px; line-height: 40px;">
+                            <span id="title_enfant_jaune">grâce à vous,<br>momo</span>
+                            <span class="noir_pur" id="title_enfant_noir">va être pris<br>en charge</span>
+                        </div>
+                        <div style="border-top: 3px solid #f9b000; width: 225px;"></div>
+                        <br>
+                        <div class="row jaune bold" style="font-size: 15px; line-height: 20px;">
+                            <span id="sous_title_enfant_jaune_1">MOMO, 17 mois, Mauritanie</span><br>
+                            <span id="sous_title_enfant_jaune_2">Pathologie : Malformation faciale</span>
+                        </div>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-sm-10 col-lg-6 no_padding">
+                                <span id="black_title_text_1" class="uppercase noir_pur bold"
+                                    style="font-size: 20px;">une malformation rare</span><br>
+                                <span id="black_text_1" class="noir_pur" style="font-size: 15px; font-weight: 500;">Momo
+                                    est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare
+                                    que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large
+                                    fente qui lui déchire le visage. Âgé de 17 mois, il vit près de Nouadhibou, une
+                                    petite ville située à plus de 399 km de la capitale.</span><br>
+                                <br>
+                                <div class="container-fluid"
+                                    style="height: 100%; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;"
+                                    id="video_div">
+                                    <video width="100%" height="auto" id="video">
+                                        <source src="assets/20-km-de-paris-solidaires.mp4" type="video/mp4" />
+                                    </video>
+                                    <div style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 60px; width: 60px; margin: auto; border-radius: 50px; cursor: pointer;"
+                                        class="jaune_bg play_button_video">
+                                        <img src="assets/play.png" height="50%"
+                                            style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;">
+                                    </div>
+                                </div>
+                                <br><br>
+                                <span id="yellow_text_1" class="jaune"
+                                    style="font-style: italic; font-size: 25px; font-weight: 600;">Sa famille, qui vit
+                                    dans<br> une grande précarité,<br> ne peut rien pour lui.</span>
+                                <br>
+                                <br>
+                                <br>
+                                <span id="black_title_text_2" class="uppercase noir_pur bold"
+                                    style="font-size: 20px;">une solution existe</span><br>
+                                <span id="black_text_2" class="noir_pur" style="font-size: 15px; font-weight: 500;">Les
+                                    parents de Momo n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en
+                                    charge afin de lui donner une nouvelle vie…</span><br>
+                                <br><br>
+                                <img src="assets/rectangle_bas_enfant.png" width="100%" height="auto">
+                                <br><br>
+                                <span id="black_title_text_1" class="noir_pur bold"
+                                    style="font-size: 15px;">Heureusement, une solution chirurgicale existe ; </span>
+                                <span id="black_text_1" class="noir_pur" style="font-size: 15px; font-weight: 500;">nous
+                                    pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront
+                                    nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ;
+                                    la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ;
+                                    enfin, la dernière intervention pourra redessiner son visage.</span><br>
+                                <br><br><br>
+                            </div>
+                            <div class="col-sm-2 col-lg-6">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-2 no_padding">
+                        <img src="assets/Shape_enfant.png" width="100%" height="auto" style="text-align: right; " id="shape_enfant">
+                    </div>
+                </div>
+            </div>
         </div>
-    </form>
+    </div>
     <!--DON-->
-    <div class="container-fluid" style="min-height: 100vh; width: 100%; background-color: rgba(249, 176, 0, 0.8)">
+    <div class="container-fluid" style="min-height: 100vh; width: 100%; background-color: rgba(249, 176, 0, 0.8)" id="don_page_enfant">
         <div class="row titles_don" style="min-height: 20vh;">
             <div class="col-lg-12 text-center"
                 style="color: white; vertical-align: middle; line-height: 5vh; margin-top: 10vh; margin-bottom: 100px;">
@@ -508,19 +497,11 @@
             </div>
         </div>
     </form>
-    <!--STICKY-->
-    <div id="sticky_don">
-        <img src="assets/BT.png" id="don_button_header">
-    </div>
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/t-shirt.js"></script>
+<script src="js/enfant.js"></script>
 <script src="js/video.js"></script>
-<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-<script src="js/header.js"></script>
-<script src="js/description.js"></script>
-
-
 
 </html>
