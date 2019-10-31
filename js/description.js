@@ -1,7 +1,7 @@
 function changeColor(e) {
-    e.parentElement.style.color = "#f9b000";
+    e.firstElementChild.style.color = "#f9b000";
 }
 
 function changeBackColor(e) {
-    e.parentElement.style.color = "#ffffff";
+    e.firstElementChild.style.color = "#ffffff";
 }

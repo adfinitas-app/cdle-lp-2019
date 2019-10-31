@@ -1,8 +1,58 @@
 /*******  Description  *******/
 
-.imgKid:hover {
+.imgKid {
+    border: 0px #f9b000 solid;
+    width: 214px;
+    height: 214px;
+    border-radius: 107px;
+    transition: border 0.1s linear;
+}
+
+.imgKid-container:hover .imgKid {
     border: 7px #f9b000 solid;
     width: 214px;
     height: 214px;
     border-radius: 107px;
+}
+
+.ombre {
+    position: absolute;
+    width: 184px;
+    height: 184px;
+    bottom: 7px;
+    left: 50%;
+    margin-left: -92px;
+    opacity: 0;
+    transition: opacity 0.1s linear;
+}
+
+.imgKid-container:hover .ombre {
+    position: absolute;
+    width: 186px;
+    height: 186px;
+    left: 50%;
+    margin-left: -93px;
+    opacity: 0.5;
+}
+
+.kidDesc {
+    position: absolute;
+    text-align: center;
+    width: 214px;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -107px;
+    display: none;
+    font-weight: normal;
+
+}
+
+.imgKid-container:hover .kidDesc {
+    position: absolute;
+    text-align: center;
+    width: 214px;
+    left: 50%;
+    bottom: 20px;
+    margin-left: -107px;
+    display: initial;
 }
