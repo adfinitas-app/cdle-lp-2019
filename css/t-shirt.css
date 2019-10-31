@@ -29,6 +29,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        background-color: white!important;
+        background-image: none!important;
+    }
     .height_t-shirt {
         height: auto;
         max-height: 100%;
@@ -39,6 +43,7 @@
     }
     #t-shirt_div_height {
         max-height: none!important;
+        background-color: black;
     }
 }
 

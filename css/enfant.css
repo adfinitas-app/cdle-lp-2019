@@ -1,6 +1,9 @@
 #shape_enfant {
     margin-top: 300px;
 }
+#Page_Enfant {
+    display: none;
+}
 
 @media screen and (max-width: 768px) {
     .padding_30 {
