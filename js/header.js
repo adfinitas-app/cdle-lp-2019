@@ -951,7 +951,6 @@
                 container.style.width = "100%";				
                 container.style.height = "auto";
                 if (container.id == "animation_container") {
-                    console.log(window.innerWidth)
                     if (window.innerWidth < 1200) {
                         container.style.height = "55vw";
                     } else {
@@ -1005,7 +1004,6 @@
         //Registers the "tick" event listener.
         fnStartAnimation = function () {
             stage.addChild(exportRoot);
-            console.log(lib.properties.fps);
             createjs.Ticker.setFPS(lib.properties.fps);
             createjs.Ticker.addEventListener("tick", stage);
         }
