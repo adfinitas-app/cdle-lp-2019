@@ -1005,6 +1005,7 @@
         //Registers the "tick" event listener.
         fnStartAnimation = function () {
             stage.addChild(exportRoot);
+            console.log(lib.properties.fps);
             createjs.Ticker.setFPS(lib.properties.fps);
             createjs.Ticker.addEventListener("tick", stage);
         }

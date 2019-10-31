@@ -4,6 +4,7 @@ function SetPageEnfant(name) {
     $("#Page_Enfant").css("display", "block");
     $("#Home_Page").css("display", "none");
 
+    createjs.Ticker.setFPS(1);
     ScrollWindow = $(window).scrollTop();
 
     $('html, body').animate({
@@ -32,8 +33,9 @@ $("#retour_enfant").click(function() {
     $("#Page_Enfant").css("display", "none");
     $("#Home_Page").css("display", "block");
     $('html, body').animate({
-        scrollTop: $(window).scrollTop()
+        scrollTop: ScrollWindow
     },1);
+    createjs.Ticker.setFPS(30);
 });
 
 var url_string = window.location.href;
@@ -43,3 +45,7 @@ var c = url.searchParams.get("enfant");
 if (c) {
     SetPageEnfant(c)
 }
+
+$(".imgKid-container").click(function() {
+    SetPageEnfant(this.id);
+});

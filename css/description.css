@@ -15,6 +15,10 @@
     border-radius: 107px;
 }
 
+.imgKid-container {
+    cursor: pointer;
+}
+
 .ombre {
     position: absolute;
     width: 184px;
@@ -55,4 +59,10 @@
     bottom: 20px;
     margin-left: -107px;
     display: initial;
+}
+
+@media screen and (max-width: 768px) {
+    #description {
+        background-color: black;
+    }
 }
