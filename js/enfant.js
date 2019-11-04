@@ -1,8 +1,6 @@
 var ScrollWindow = 0;
 
 function SetPageEnfant(name) {
-    $("#Page_Enfant").css("display", "block");
-    $("#Home_Page").css("display", "none");
 
     createjs.Ticker.setFPS(1);
     ScrollWindow = $(window).scrollTop();
@@ -58,6 +56,8 @@ function SetPageEnfant(name) {
             $("#sticky_enfant").css({ "padding-top": ($(window).scrollTop()) + "px" });
         }
     });
+    $("#Page_Enfant").css("display", "block");
+    $("#Home_Page").css("display", "none");
 }
 
 $("#retour_enfant").click(function () {
@@ -75,6 +75,20 @@ var c = url.searchParams.get("enfant");
 
 if (c) {
     SetPageEnfant(c)
+}
+
+c = url.searchParams.get("reserved_code_media");
+
+if (c) {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&reserved_code_media=" + c;
+    }
+} else {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&reserved_code_media=19";
+    }
 }
 
 $(".imgKid-container").click(function () {

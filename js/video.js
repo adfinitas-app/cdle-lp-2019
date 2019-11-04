@@ -5,7 +5,7 @@
     var url = new URL(url_string);
     var c = url.searchParams.get("video");
 
-     video.addEventListener('pause', function(){
+    video.addEventListener('pause', function(){
         $(".play_button_video").css('display', "block");
         $("#video").trigger("pause");
         playing = false;
@@ -17,15 +17,15 @@
     $("#video_div").click(function() {
         if (playing) {
             $(".play_button_video").css('display', "block");
-            $("#video").trigger("pause");
+            $('video').each(this.pause());
             playing = false;
         } else {
             $(".play_button_video").css('display', "none");
-            $("#video").trigger("play");
             playing = true;
             $("#video").each(function() {
                 this.controls = true;
             });
+            $('video').each(this.play());
         }
     });
     if (c != null) {
