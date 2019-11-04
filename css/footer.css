@@ -9,6 +9,14 @@
     font-size: 15px;
 }
 
+#DDC-IDEAS {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-left: #d7D7D7 solid 1px;
+    border-right: #d7D7D7 solid 1px;
+}
+
 @media (max-width: 1001px) {
     #footer-left {
         text-align: center !important;
@@ -23,4 +31,13 @@
     #desc-chiffresCles {
         padding-right: 100px;
     }
+
+    #DDC-IDEAS {
+        padding-top: 35px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-left: #d7D7D7 solid 0px;
+        border-right: #d7D7D7 solid 0px;
+    }
 }
+
