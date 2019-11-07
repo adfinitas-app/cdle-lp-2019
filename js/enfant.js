@@ -77,6 +77,48 @@ if (c) {
     SetPageEnfant(c)
 }
 
+c = url.searchParams.get("utm_source");
+
+if (c) {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_source=" + c;
+    }
+} else {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_source=HOME";
+    }
+}
+
+c = url.searchParams.get("utm_campaign");
+
+if (c) {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_campaign=" + c;
+    }
+} else {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_campaign=FA19";
+    }
+}
+
+c = url.searchParams.get("utm_medium");
+
+if (c) {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_medium=" + c;
+    }
+} else {
+    var links = document.getElementsByClassName("uconc");
+    for (var x = 0; x < links.length; x++) {
+        links[x].href += "&utm_medium=LP";
+    }
+}
+
 c = url.searchParams.get("reserved_code_media");
 
 if (c) {
@@ -87,7 +129,7 @@ if (c) {
 } else {
     var links = document.getElementsByClassName("uconc");
     for (var x = 0; x < links.length; x++) {
-        links[x].href += "&reserved_code_media=19";
+        links[x].href += "&reserved_code_media=l190900";
     }
 }
 
