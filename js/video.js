@@ -25,7 +25,9 @@
             $("#video").each(function() {
                 this.controls = true;
             });
-            $('video').each(this.play());
+            $('video').each(function() {
+                this.play();
+            });
         }
     });
     if (c != null) {
