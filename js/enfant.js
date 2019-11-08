@@ -111,6 +111,7 @@ function SetPageEnfant(name) {
     for (var i = 0; i < idList.length; i++) {
         $(idList[i]).html(enfantText[i]);
     }
+    $("#don_bas_enfant").html("je passe l'espoir pour " + name);
     $(window).scroll(function () {
         heightElement = document.getElementById("don_page_enfant").offsetTop;
 
