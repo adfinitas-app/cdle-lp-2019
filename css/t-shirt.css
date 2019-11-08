@@ -24,7 +24,15 @@
     height: 100%;
 }
 
+.img_t-shirt_enfant {
+    height: 100%;
+}
+
 #click_t-shirt {
+    bottom: 50px;
+}
+
+#click_t-shirt_enfant {
     bottom: 50px;
 }
 
@@ -41,6 +49,10 @@
         height: auto;
         width: 100%;
     }
+    .img_t-shirt_enfant {
+        height: auto;
+        width: 100%;
+    }
     #t-shirt_div_height {
         max-height: none!important;
         background-color: black;
@@ -49,6 +61,9 @@
 
 @media screen and (max-width: 540px) {
     #click_t-shirt {
+        bottom: 10px;
+    }
+    #click_t-shirt_enfant {
         bottom: 10px;
     }
 }
