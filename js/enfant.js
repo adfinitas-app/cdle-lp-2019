@@ -18,7 +18,7 @@ function SetPageEnfant(name) {
     $('meta[property="og:url"]').remove();
     $("head").append('<meta property="og:title" content="blubb1">');
     $("head").append('<meta property="og:description" content="blubb2">');
-    $("head").append('<meta property="og:url" content="blubb3">');
+    $("head").append('<meta property="og:url" content="https://jepasselespoir.chainedelespoir.org/?&enfant=' + name + '">');
 
     document.getElementById("facebook_enfant").href = "https://www.facebook.com/sharer/sharer.php?u=https://jepasselespoir.chainedelespoir.org/" + "?&enfant=" + name + "&quote=Ensemble, agissons pour " + name + "!";
 
