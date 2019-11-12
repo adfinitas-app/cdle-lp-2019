@@ -71,9 +71,3 @@ html, body {
 .grey {
     color: #808080;
 }
-
-@media (max-width: 767px) {
-    br {
-        display: none !important;
-    }
-}

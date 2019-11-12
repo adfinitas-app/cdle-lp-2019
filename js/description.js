@@ -5,3 +5,17 @@ function changeColor(e) {
 function changeBackColor(e) {
     e.firstElementChild.style.color = "#ffffff";
 }
+
+if (window.innerWidth < 767) {
+    $(".desc_nbr br").replaceWith('&nbsp;');
+}
+
+$( window ).resize(function () {
+    if (window.innerWidth < 767) {
+        $(".desc_nbr br").replaceWith('&nbsp;');
+    } else {
+        $(".desc_nbr").each(function () {
+            $(this).html($(this).html().replace('&nbsp;', "<br/>"));
+        })
+    }
+});
