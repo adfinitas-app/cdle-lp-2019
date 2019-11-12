@@ -41,3 +41,15 @@
     }
 }
 
+@media (max-width: 767px) {
+
+    .nbr_footer {
+        font-size: 35px;
+        line-height: 30px;
+    }
+
+    .desc_nbr {
+        font-size: 12px;
+    }
+}
+
