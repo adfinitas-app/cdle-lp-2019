@@ -96,6 +96,16 @@
     font-size: 1.2vw;
 }
 
+.showTransition {
+    display: none;
+}
+
+@media(max-width:1436px) {
+    .showTransition {
+        display: inline;
+    }
+}
+
 @media(min-width:1600px) {
     .description_column_don {
         height: 300px;
