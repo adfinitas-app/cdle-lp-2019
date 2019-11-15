@@ -77,8 +77,8 @@ function SetPageEnfant(name) {
             case "nitha":
                 newHrefEnfant += "&cid=" + 190;
                 break;
-            case "laura":
-                enfantText = lauraText;
+            case "baian":
+                enfantText = baianText;
                 break;
             case "momo":
                 enfantText = momoText;
@@ -134,7 +134,17 @@ function SetPageEnfant(name) {
         "Aidez Ayo à être soignée et à réaliser son rêve",
         "Une opération chirurgicale est possible ! Le personnel médical de l’Hôpital Necker — Enfants Malades à Paris sait réaliser cette opération délicate et Ayo pourra en bénéficier si nous nous mobilisons pour elle. Sa famille n’attend rien d’autre que de la voir enfin soulagée. Aidons Ayo à être soignée mais aussi à réaliser son rêve : celui d’être ophtalmologiste pour pouvoir à son tour aider les enfants du Bénin atteints de troubles oculaires.",
         "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
-    var lauraText = ["grâce à vous,<br>momo", "va être pris<br>en charge", "MOMO, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "Momo est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de Momo n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
+    var baianText = ["baian a besoin<br>de nous,",
+        "soutenons-la !",
+        "baian, 17 mois, Syrie",
+        "LCH*",
+        "2 500&#8239€",
+        "baian est née avec une malformation de la hanche",
+        "<br>Baian est une petite fille syrienne de 17 mois qui vit en Jordanie avec sa famille.A sa naissance, elle est arrivée en position de siège et sa mère a dû subir une césarienne. C’est la famille qui a dû financer l’opération, malgré leurs faibles revenus.Dès ses premières semaines de vie, Baian a été examinée par 3 médecins qui ont tous posé le même diagnostic : Baian souffre d’une luxation congénitale de la hanche gauche*, appelée LCH, dûe aux conditions de sa mise au monde.<br><br>Cette pathologie se décrit simplement : l’extrémité supérieure du fémur n’est pas à sa place normale. Au lieu d’être dans la cavité qui sert d’articulation avec le bassin (cotyle), elle est en dehors. Lorsqu’elle est dépistée, cette affection nécessite le port d’un harnais de Pavlik qui maintient les hanches écartées et permet au fémur de se repositionner correctement. Le plus souvent, cette rééducation est suffisante.",
+        "Mais en cas de prise en charge tardive, ou d’échec, un traitement chirurgical devient indispensable pour replacer la tête du fémur dans sa cavité.",
+        "Un premier traitement échoué",
+        "Baian a été prise en charge très rapidement et a porté un harnais de Pavlik pendant 4 mois et demi. Lors de la visite de contrôle, le médecin qui suivait la fillette a décidé de cesser le traitement car la hanche paraissait stabilisée.<br><br>Malheureusement, à 14 mois, l’âge des premiers pas, la famille a remarqué que Baian boitait. Ils l’ont alors ramenée chez le médecin qui a confirmé l’échec du premier traitement.<br><br><br><span id='black_title_text_2' class='uppercase noir_pur bold' style='font-size: 25px; line-height: 22px'>Il faut agir rapidement</span><br>Il faut maintenant corriger la LCH de Baian par une intervention chirurgicale.L’opération consistera en une reposition chirurgicale de la tête du fémur dans le cotyle, à sa place normale. Mais si cette intervention n’est pas réalisée dans les prochains mois, Baian continuera de boiter et souffrira d’une douleur à la hanche de plus en plus intense. Elle devra alors subir une opération plus complexe, qui laissera par ailleurs d’inévitables séquelles : raideurs et douleurs de la hanche.<br><br><br><span id='black_title_text_2' class='uppercase noir_pur bold' style='font-size: 25px; line-height: 22px;'>Sauvons Baian, offrons-lui cette opération</span><br>Grâce à votre soutien et à vos dons, Baian pourra être opérée. Dans les 3 mois suivants l’intervention chirurgicale, elle pourra marcher, puis ensuite courir et vivre. Offrons à Baian cette opération et la chance de grandir comme les autres enfants de son âge !",
+        "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
     var konanText = ["grâce à vous,<br>momo", "va être pris<br>en charge", "MOMO, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "Momo est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de Momo n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
 
     var enfantText = momoText;
@@ -149,8 +159,8 @@ function SetPageEnfant(name) {
         case "nitha":
             enfantText = nithaText;
             break;
-        case "laura":
-            enfantText = lauraText;
+        case "baian":
+            enfantText = baianText;
             break;
         case "momo":
             enfantText = momoText;
