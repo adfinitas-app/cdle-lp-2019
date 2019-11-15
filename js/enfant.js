@@ -134,7 +134,7 @@ function SetPageEnfant(name) {
         "Aidez Ayo à être soignée et à réaliser son rêve",
         "Une opération chirurgicale est possible ! Le personnel médical de l’Hôpital Necker — Enfants Malades à Paris sait réaliser cette opération délicate et Ayo pourra en bénéficier si nous nous mobilisons pour elle. Sa famille n’attend rien d’autre que de la voir enfin soulagée. Aidons Ayo à être soignée mais aussi à réaliser son rêve : celui d’être ophtalmologiste pour pouvoir à son tour aider les enfants du Bénin atteints de troubles oculaires.",
         "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
-    var baianText = ["baian a besoin<br>de nous,",
+    var baianText = ["baian a besoin<br>de nous,<br>",
         "soutenons-la !",
         "baian, 17 mois, Syrie",
         "LCH*",
