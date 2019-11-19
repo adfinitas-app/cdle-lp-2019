@@ -279,7 +279,7 @@ if (c) {
 } else {
     var links = document.getElementsByClassName("uconc");
     for (var x = 0; x < links.length; x++) {
-        links[x].href += "&reserved_code_media=l190900";
+        links[x].href += "&reserved_code_media=I190900";
     }
 }
 
