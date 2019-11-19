@@ -74,3 +74,11 @@
         },1);
     }
 })();
+
+$("#ButtonMahdi").click(function() {
+    $("#ButtonMahdi").css("display", "none");
+
+    var vid = document.getElementById("video_mahdi"); 
+    vid.play();
+    vid.controls = true;
+});

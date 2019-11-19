@@ -48,6 +48,9 @@ function SetPageEnfant(name) {
         $(".video_enfant_haut").css("display", "block");
     }
 
+    if (name == "mahdi") {
+        $("#rectangle_haut_enfant").css("display", "none");
+    }
     var links = document.getElementsByClassName("uconc_enfant");
     for (var x = 0; x < links.length; x++) {
         var newHrefEnfant = "https://donner.chainedelespoir.org/b?";
@@ -90,8 +93,8 @@ function SetPageEnfant(name) {
             case "baian":
                 newHrefEnfant += "&cid=" + 191;
                 break;
-            case "momo":
-                enfantText = momoText;
+            case "mahdi":
+                enfantText = mahdiText;
                 break;
             case "konan":
                 enfantText = konanText;
@@ -110,7 +113,7 @@ function SetPageEnfant(name) {
     document.getElementById("facebook_enfant").href = "https://www.facebook.com/sharer/sharer.php?u=https://jepasselespoir.chainedelespoir.org/&quote=Passez l'espoir et sauvez des vies. %23jepasselespoir";
     document.getElementById("twitter_enfant").href = "https://twitter.com/intent/tweet?url=https://jepasselespoir.chainedelespoir.org/&text=Passez l'espoir et sauvez des vies.&hashtags=jepasselespoir";
 
-    var momoText = ["grâce à vous,<br>momo", "va être pris<br>en charge", "MOMO, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "Momo est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de Momo n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
+    var mahdiText = ["grâce à vous,<br>mahdi", "va être pris<br>en charge", "mahdi, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "mahdi est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de mahdi n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
     var andyText = ["andy a<br>besoin de vous,<br>",
         "aidez-le",
         "andy, 5 ANS, madagascar",
@@ -155,9 +158,19 @@ function SetPageEnfant(name) {
         "Un premier traitement échoué",
         "Baian a été prise en charge très rapidement. Après 4 mois et demi de port du harnais de Pavlik, la hanche paraissait stabilisée ; le médecin a alors décidé de cesser le traitement.<br><br>Malheureusement, à 14 mois, l’âge des premiers pas, la famille a remarqué que Baian boitait. lls l’ont alors ramenée chez le médecin qui a confirmé l’échec du premier traitement.<br><br><br><span id='black_title_text_2' class='uppercase noir_pur bold' style='font-size: 25px; line-height: 22px'>Il faut agir rapidement</span><br>L’opération chirurgicale consiste en un repositionnement chirurgical de la tête du fémur dans le cotyle, à sa place normale. Si cette intervention n’est pas réalisée dans les prochains mois, Baian continuera de boiter et souffrira d’une douleur à la hanche de plus en plus intense. Elle devra alors subir une opération plus complexe, qui laissera par ailleurs d’inévitables séquelles : raideurs et douleurs de la hanche.<br><br><br><span id='black_title_text_2' class='uppercase noir_pur bold' style='font-size: 25px; line-height: 22px;'>Sauvons Baian, offrons-lui cette opération</span><br>Grâce à votre soutien et à vos dons, Baian pourra être opérée. Dans les 3 mois suivants l’intervention chirurgicale, elle pourra marcher, puis ensuite courir et vivre. Offrons à Baian cette opération et la chance de grandir comme les autres enfants de son âge !",
         "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
-    var konanText = ["grâce à vous,<br>momo", "va être pris<br>en charge", "MOMO, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "Momo est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de Momo n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
+    var mahdiText = ["offrons à<br>madhi un<br>",
+        "nouveau sourire",
+        "mahdi, 1 an, mali",
+        "fente labiale",
+        "6 00 €*",
+        "Mahdi vit avec ses deux parents et ses trois sœurs dans la région de Kayes, au Mali.",
+        "<br>Aussitôt né, sa maman a immédiatement remarqué une malformation au niveau de sa bouche. Tellement paniquée, elle n'a pas osé allaiter son enfant. Pour cause, en Afrique les malformations sont synonymes de malédictions et les rumeurs se répandent très vite. Accoucher d’un nouveau-né atteint d’un bec de lièvre implique donc une peur de se voir exclus de sa communauté, et surtout, de voir son enfant se faire bannir de tous.<div class='container-fluid'    style='height: auto; width: 100%; background-color: black; position: relative; background-size: cover; padding: 0;'    id='video_mahdi_div'>    <video width='100%' height='auto' id='video_mahdi' poster='assets/poster_nitha.png'>        <source src='assets/video_haut_enfant_nitha.mp4' type='video/mp4' />    </video>    <div style='position: absolute; top: 0; right: 0; bottom: 0; left: 0; height: 60px; width: 60px; margin: auto; border-radius: 50px; cursor: pointer;'        class='jaune_bg play_button_video' id='ButtonMahdi'>        <img src='assets/play.png' height='50%'            style='position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto;'>    </div></div><br><br>Les parents de Mahdi ont immédiatement consulté un tradi-praticien qui leur a conseillé d’emmener leur fils au Centre Hirzel, à Bamako, une structure spécialisée dans la prise en charge d’enfants nécessitant une chirurgie de la face. Une fois au Centre, après plusieurs heures de taxi brousse, les équipes médicales ont diagnostiqué chez Mahdi une fente labio-alveolo-palatine unilatérale droite, autrement-dit un « bec de lièvre », qui limite son alimentation et retarde sa croissance :",
+        "le lait ne peut être ingéré normalement, une grande partie du liquide ressortant par son nez.",
+        "LA SITUATION POURMAHDI EST GRAVE",
+        "Agé d’à peine un an, Mahdi a besoin d’apports nutritionnels importants pour vivre. Lui et sa maman ont séjourné quelques jours au Centre Hirzel afin de recevoir des conseils.Mais ça ne suffit pas : seule une intervention chirurgicale permettra à Mahdi de s’alimenter correctement.<br><br><br><span id='black_title_text_2' class='uppercase noir_pur bold' style='font-size: 25px; line-height: 22px;'>UNE FAMILLE SOUDÉE DANS L’ADVERSITÉ</span><br>Contrairement à de nombreux enfants qui naissent avec cette malformation, Mahdi a la chance d’être entouré par toute sa famille. Les rumeurs africaines qui assimilent les fentes labiales à l’œuvre du démon n’ont donc pas d’emprise sur l’amour qui lui est déjà porté, ce qui fait de lui un petit garçon joyeux et plein de vie.<br>Mais ses parents, aux moyens financiers limités ne peuvent surmonter les frais d’une telle opération.<br><br>Avec un don, vous contribuerez à soigner Mahdi et vous changerez le destin de toute une famille !"]
+    var konanText = ["grâce à vous,<br>mahdi", "va être pris<br>en charge", "mahdi, 17 mois, Mauritanie", "Pathologie : Malformation faciale", "une malformation rare", "mahdi est un petit garçon mauritanien né avec une grave malformation faciale, aussi rare que terrible : une macrostomie congénitale bilatérale, en d'autres termes une large fente qui lui déchire le visage.Âgé de 17 mois, il vit près de Nouadhibou, une petite ville située à plus de 399 km de la capitale.", "Sa famille, qui vit dans<br> une grande précarité,<br> ne peut rien pour lui.", "une solution existe", "Les parents de mahdi n'ont qu'un vœu en cette fin d’année : que leur enfant soit pris en charge afin de lui donner une nouvelle vie…", "Heureusement, une solution chirurgicale existe ; ", "nous pouvons éliminer la souffrance de ce petit garçon. Trois opérations complexes seront nécessaires : la première refermera la fente du palais, à l’intérieur de la bouche ; la deuxième soignera les fentes qui atteignent la face inférieure de l’enfant ; enfin, la dernière intervention pourra redessiner son visage."];
 
-    var enfantText = momoText;
+    var enfantText = mahdiText;
 
     switch (name) {
         case "ayo":
@@ -172,8 +185,8 @@ function SetPageEnfant(name) {
         case "baian":
             enfantText = baianText;
             break;
-        case "momo":
-            enfantText = momoText;
+        case "mahdi":
+            enfantText = mahdiText;
             break;
         case "konan":
             enfantText = konanText;
@@ -208,10 +221,10 @@ $("#retour_enfant").click(function () {
     createjs.Ticker.setFPS(30);
     init();
     $("video").trigger("pause");
-        playing = false;
-        $("video").each(function() {
-            this.controls = false;
-        });
+    playing = false;
+    $("video").each(function () {
+        this.controls = false;
+    });
 });
 
 var url_string = window.location.href;
@@ -281,6 +294,14 @@ if (c) {
     for (var x = 0; x < links.length; x++) {
         links[x].href += "&reserved_code_media=I190900";
     }
+}
+
+c = url.searchParams.get("prod");
+
+if (c) {
+    $(".display_prod").css("display", "block");
+} else {
+    $(".display_prod").css("display", "none");
 }
 
 $(".imgKid-container").click(function () {

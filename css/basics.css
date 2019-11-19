@@ -71,3 +71,7 @@ html, body {
 .grey {
     color: #808080;
 }
+
+.display_prod {
+    display: none;
+}
