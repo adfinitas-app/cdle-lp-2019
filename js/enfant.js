@@ -308,25 +308,10 @@ if (c) {
     }
 }
 
-function msieversion() {
-
-    var ua = window.navigator.userAgent;
-    var msie = ua.indexOf("MSIE ");
-    alert("lol");
-    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
-    {
-        alert(parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
-        document.getElementById("animation_container").style.display = "none";
-    }
-
-    return false;
-}
-
 c = url.searchParams.get("prod");
 
 if (c) {
     $(".display_prod").css("display", "block");
-    msieversion();
 } else {
     $(".display_prod").css("display", "none");
 }
