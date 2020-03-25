@@ -21,3 +21,10 @@
         padding-left: 0px!important;
     }
 }
+
+.paragraph_enfant {
+    font-size: 15px;
+    font-weight: 500;
+    color: #000;
+    margin: 20px 0;
+}
