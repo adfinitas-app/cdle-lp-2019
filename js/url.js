@@ -1,6 +1,7 @@
 transferQueryParams($('.uconc'));
 
 function transferQueryParams($links) {
+
     const url_string = window.location.href;
     const url = new URL(url_string);
 
