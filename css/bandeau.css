@@ -1,0 +1,38 @@
+.bandeau {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+}
+
+.bandeau .covid {
+    font-size: 71px;
+    color: #F9B000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.bandeau .chaine {
+    font-size: 32px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    line-height: 0.8em;
+}
+
+.bandeau .chaine span {
+    font-size: 26px;
+}
+
+.bandeau .en-raison {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bandeau .en-raison span {
+    color: #F9B000;
+}
+
+@media screen and (min-width: 1300px) {
+    .bandeau .chaine {
+        margin-top: 20px;
+    }
+}
