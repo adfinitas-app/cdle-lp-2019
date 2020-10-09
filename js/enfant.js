@@ -13,7 +13,6 @@ function checkImage(src) {
 }
 
 function SetPageEnfant(name) {
-
     createjs.Ticker.setFPS(1);
     ScrollWindow = $(window).scrollTop();
 
@@ -332,6 +331,6 @@ if (c) {
     $(".display_prod").css("display", "none");
 }
 
-$(".imgKid-container").click(function () {
+$(".imgKid-container:not(.no-event)").click(function () {
     SetPageEnfant(this.id);
 });
