@@ -13,6 +13,8 @@ function checkImage(src) {
 }
 
 function SetPageEnfant(name) {
+
+    return;
     createjs.Ticker.setFPS(1);
     ScrollWindow = $(window).scrollTop();
 
