@@ -19,6 +19,10 @@
     cursor: pointer;
 }
 
+a.imgKid-container {
+    display: block;
+}
+
 .ombre {
     position: absolute;
     width: 184px;

@@ -5,6 +5,7 @@ $(document).ready(function () {
 	c = url.searchParams.get("goBack");
 
 	if (c) {
-		$(".goBack").addClass("show");
+    $(".goBack").addClass("show");
+    $(".goBack a").attr("href", "/#" + c);
 	}
 });

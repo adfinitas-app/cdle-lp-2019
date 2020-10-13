@@ -339,7 +339,7 @@ if (c) {
 } else {
 	var links = document.getElementsByClassName("uconc");
 	for (var x = 0; x < links.length; x++) {
-		links[x].href += "&utm_campaign=FA19";
+		links[x].href += "&utm_campaign=FA20";
 	}
 }
 
@@ -367,7 +367,7 @@ if (c) {
 } else {
 	var links = document.getElementsByClassName("uconc");
 	for (var x = 0; x < links.length; x++) {
-		links[x].href += "&reserved_code_media=I190900";
+		links[x].href += "&reserved_code_media=I200955";
 	}
 }
 
@@ -385,16 +385,15 @@ $(".imgKid-container:not(.no-event)").click(function () {
 
 $(document).ready(function () {
 	if (window.location.hash) {
-		setTimeout(() => {
-			if ($(window.location.hash).length <= 0) {
-				return;
-			}
-			$("html, body").animate(
+		if ($(window.location.hash).length <= 0) {
+			return;
+		}
+		$("html, body")
+			.animate(
 				{
 					scrollTop: $(window.location.hash).offset().top,
 				},
-				200
+				1
 			);
-		}, 400);
 	}
 });
