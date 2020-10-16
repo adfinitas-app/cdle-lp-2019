@@ -130,6 +130,21 @@
     margin: 0 20px;
 }
 
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
 @media(max-width:1436px) {
     .showTransition {
         display: inline;
