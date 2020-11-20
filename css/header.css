@@ -56,7 +56,7 @@
 
     
     #sticky_don > p {
-        font-size: 16px;
+        font-size: 14px;
         margin-right: 10px;
     }
 
@@ -68,6 +68,8 @@
         text-align: right;
     }
 }
+
+
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     #animation_container {
