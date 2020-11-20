@@ -40,6 +40,7 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/basics.css" />
 		<link rel="stylesheet" type="text/css" href="css/enfant.css" />
+		<link rel="stylesheet" type="text/css" href="css/alain.css" />
 		<meta property="og:url" content="https://jepasselespoir.chainedelespoir.org/" />
 		<link rel="icon" href="assets/favicon.png" />
 		<meta property="og:title" content="" />
@@ -716,8 +717,12 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-6">
-						<p class="uppercase bold Montserrat" style="font-size: 50px; line-height: 1.2; margin-top: 20px">
-							<span class="jaune">Comme des<br>milliers d'autres<br>Enfants, ils ont</span><br><span class="blanc_pur">reçu l'espoir</span>
+						<p
+							class="uppercase bold Montserrat"
+							style="font-size: 50px; line-height: 1.2; margin-top: 20px"
+						>
+							<span class="jaune">Comme des<br />milliers d'autres<br />Enfants, ils ont</span
+							><br /><span class="blanc_pur">reçu l'espoir</span>
 						</p>
 						<hr
 							style="width: 10vw; border-color: #f9b000; border-top: 3px solid #f9b000"
@@ -725,12 +730,78 @@
 						/>
 						<p class="blanc_pur Montserrat" style="font-size: 20px">
 							Chacun de vos dons a contribué à former une véritable chaîne de solidarité autour de
-							milliers d'enfants, qui vont maintenant pouvoir grandir normalement.<br>
+							milliers d'enfants, qui vont maintenant pouvoir grandir normalement.<br />
 							Merci d’avoir été à leurs côtés.
 						</p>
 					</div>
 				</div>
 			</div>
+
+			<!-- SECTION ALAIN DELOCHE -->
+			<section id="alain-deloche">
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<p class="title">« Leur vie,<br />c’est ma vie. »</p>
+						<p class="subtitle">
+							Pr Alain Deloche<br />
+							<span style="font-size: 16px; font-weight: normal">Éditions du Cherche midi</span>
+						</p>
+						<div class="decouvrez">
+							Découvrez ou redécouvrez l’engagement du Pr&nbsp;Alain&nbsp;Deloche, premier maillon
+							de La Chaîne de l’Espoir
+							<p class="collapse" id="text-more">
+								Dans un magnifique livre-témoignage, le Pr Alain Deloche revient sur son engagement
+								auprès de l'enfance en danger et nous raconte des moments d'une force incroyable
+								comme la première opération à cœur ouvert au Mali. C'est l'histoire de Fanta et elle
+								résume l'engagement de La Chaîne de l'Espoir qui a sauvé 200 000 enfants en 2019, et
+								des millions d'autres depuis sa création il y a plus de 25 ans.
+								<span
+								class="more"
+								data-toggle="collapse"
+								data-target="#text-more"
+								aria-expanded="false"
+								aria-controls="More"
+								>Voir moins</span
+							>
+							</p>
+							<span
+								class="more"
+								data-toggle="collapse"
+								data-target="#text-more"
+								aria-expanded="false"
+								aria-controls="More"
+								>lire la suite…</span
+							>
+						</div>
+					</div>
+				</div>
+				<div class="flex-row">
+					<p>Découvrez les extraits du livre consacrés à Fanta :</p>
+					<div class="picto-row ecouter">
+						<span class="img-wrapper">
+							<img src="assets/picto-ecouter.png" />
+						</span>
+						<span>ÉCOUTER</span>
+						<div class="my-hide">
+							<audio controls src="assets/alain-deroche.mp3">
+								Your browser does not support the
+								<code>audio</code> element.
+							</audio>
+						</div>
+					</div>
+					<a
+						class="picto-row"
+						target="_blank"
+						href="https://www.calameo.com/read/004828873d00f2642146c"
+					>
+						<span class="img-wrapper">
+							<img src="assets/picto-lire.png" />
+						</span>
+						<span>LIRE</span>
+					</a>
+				</div>
+			</section>
+			<!-- END SECTION ALAIN DELOCHE -->
 
 			<!--FOOTER-->
 			<form id="footer blanc_pur_bg" style="background-color: white">
@@ -1011,16 +1082,38 @@
 				<a href="https://donner.chainedelespoir.org/b?cid=244" target="_blank" class="uconc">
 					<img src="assets/BT.png" id="don_button_header" />
 				</a>
-				<p class="Montserrat bold text-right" style="color: #007D8A; font-size: 20px;margin-top: 7px;margin-right: 8px;margin-bottom: 0;">#oncontinuedagir</p>
+				<p
+					class="Montserrat bold text-right"
+					style="
+						color: #007d8a;
+						font-size: 20px;
+						margin-top: 7px;
+						margin-right: 8px;
+						margin-bottom: 0;
+					"
+				>
+					#oncontinuedagir
+				</p>
 			</div>
 		</div>
 	</body>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"
+	></script>
 	<script src="js/t-shirt.js"></script>
 	<script src="js/video.js"></script>
 	<script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
 	<script src="js/header.js"></script>
 	<script src="js/description.js"></script>
 	<script src="js/enfant.js"></script>
+	<script src="js/alain.js"></script>
 </html>
