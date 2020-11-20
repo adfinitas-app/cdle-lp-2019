@@ -25,9 +25,19 @@
     display: none;
 }
 
+#sticky_don > p {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
 @media screen and (max-width: 968px) {
     #don_button_header {
         width: 70%;
+    }
+
+    #sticky_don > p {
+        font-size: 16px;
+        margin-right: 40px;
     }
     #sticky_don {
         position: fixed;
@@ -42,6 +52,14 @@
     #don_button_header {
         width: 60%;
     }
+
+
+    
+    #sticky_don > p {
+        font-size: 16px;
+        margin-right: 10px;
+    }
+
     #sticky_don {
         position: fixed;
         right: 10px;
