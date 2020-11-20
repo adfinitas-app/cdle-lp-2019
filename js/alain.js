@@ -9,5 +9,6 @@ $(document).ready(function () {
     $(this).find('.my-hide').show();
     $(this).find('.img-wrapper').hide();
     $(this).find('.img-wrapper + span').hide();
+    $(this).find('audio').get(0).play();
   });
 });
