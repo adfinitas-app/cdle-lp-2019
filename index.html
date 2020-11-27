@@ -27,7 +27,7 @@
 			href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
 		/>
 		<link
-			href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap"
+			href="https://fonts.googleapis.com/css?family=Montserrat:400,700&family=Open+Sans:wght@700&display=swap"
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
@@ -777,13 +777,13 @@
 								résume l'engagement de La Chaîne de l'Espoir qui a sauvé 200 000 enfants en 2019, et
 								des millions d'autres depuis sa création il y a plus de 25 ans.
 								<span
-								class="more"
-								data-toggle="collapse"
-								data-target="#text-more"
-								aria-expanded="false"
-								aria-controls="More"
-								>Voir moins</span
-							>
+									class="more"
+									data-toggle="collapse"
+									data-target="#text-more"
+									aria-expanded="false"
+									aria-controls="More"
+									>Voir moins</span
+								>
 							</p>
 							<span
 								class="more"
@@ -1105,16 +1105,150 @@
 				</a>
 				<p
 					class="Montserrat bold text-right"
-					style="
-						color: #007d8a;
-						margin-top: 7px;
-						margin-bottom: 0;
-					"
+					style="color: #007d8a; margin-top: 7px; margin-bottom: 0"
 				>
 					#oncontinuedagir
 				</p>
 			</div>
 		</div>
+
+		<!-- POPUP MESSAGE DESKTOP & MOBILE -->
+		<div class="popup">
+			<div class="popup__msg">
+				<p>
+					<b>En 2020, vous pouvez déduire jusqu’à 1 000 € de dons à hauteur de 75%. <span>Faites un don avant le 31 Décembre pour en bénéficier</span></b>
+				</p>
+			</div>
+			<div class="popup__control">
+				<a id="popup-close" href="#close">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="11.086"
+						height="11.086"
+						viewBox="0 0 11.086 11.086"
+					>
+						<g id="Group_196" data-name="Group 196" opacity="0.3">
+							<path
+								id="Path_151"
+								data-name="Path 151"
+								d="M34.918-75.918a.426.426,0,0,0-.6,0L29.5-71.1l-4.816-4.816a.426.426,0,0,0-.6,0,.426.426,0,0,0,0,.6L28.9-70.5l-4.816,4.816a.426.426,0,0,0,0,.6.426.426,0,0,0,.6,0L29.5-69.9l4.816,4.816a.426.426,0,0,0,.6,0,.426.426,0,0,0,0-.6L30.1-70.5l4.816-4.816A.426.426,0,0,0,34.918-75.918Z"
+								transform="translate(-23.957 76.043)"
+							/>
+						</g>
+					</svg>
+				</a>
+				<a href="https://donner.chainedelespoir.org/b?cid=244" target="_blank" class="uconc">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="9.212"
+						height="16.518"
+						viewBox="0 0 9.212 16.518"
+					>
+						<path
+							id="Path_293"
+							data-name="Path 293"
+							d="M1116.557,641.279l6.427,6.846-6.427,6.846"
+							transform="translate(-1115.144 -639.865)"
+							fill="none"
+							stroke="#F8BD13"
+							stroke-linecap="round"
+							stroke-width="2"
+						/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		<!-- END POPUP MESSAGE -->
+		​
+		<!-- CSS POPUP -->
+		<style>
+			.popup {
+				display: flex;
+				flex-direction: row;
+				position: fixed;
+				width: 375px;
+				height: 70px;
+				background-color: #007D8A;
+				border-radius: 13px;
+				box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.1);
+				bottom: 40px;
+				right: 40px;
+				z-index: 1000;
+			}
+			@media (max-width: 768px) {
+				.popup {
+					display: flex;
+					flex-direction: row;
+					justify-content: center;
+					bottom: 0;
+					left: 0;
+					border-radius: 0;
+					width: 100%;
+					height: 95px;
+					box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.1);
+				}
+			}
+			.popup__msg {
+				display: flex;
+				align-items: center;
+				font-size: 12px;
+				margin: 8px 15px;
+				width: 305px;
+				color: #fff;
+			}
+			.popup__msg p {
+				margin: 0;
+				font-weight: bold;
+				font-family: "Open sans", sans-serif;
+				font-size: 12px;
+			}
+			.popup__msg span {
+				color: black;
+			}
+			@media (max-width: 768px) {
+				.popup__msg {
+					font-size: 13px;
+					width: 285px;
+				}
+			}
+			.popup__control {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				padding: 8px 0 10px;
+				position: relative;
+				width: 30px;
+				height: 100%;
+			}
+			.popup__control:before {
+				content: "";
+				position: absolute;
+				height: 50px;
+				width: 1px;
+				border-radius: 10px;
+				left: -7px;
+				top: 10px;
+				background-color: #f6f5ef;
+			}
+			@media (max-width: 768px) {
+				.popup__control {
+					width: 50px;
+					margin: auto 0;
+					padding: 5px 0;
+				}
+				.popup__control a img {
+					height: 20px;
+				}
+				.popup__control a:nth-child(2) img {
+					height: 25px;
+				}
+				.popup__control:before {
+					display: none;
+				}
+			}
+		</style>
+		<!-- END CSS POPUP -->
 	</body>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -1135,4 +1269,5 @@
 	<script src="js/description.js"></script>
 	<script src="js/enfant.js"></script>
 	<script src="js/alain.js"></script>
+	<script src="js/popup.js"></script>
 </html>
