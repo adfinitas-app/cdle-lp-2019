@@ -3,7 +3,7 @@ $(document).ready(function () {
 	setTimeout(function () {
 		$(".popup").fadeIn(500);
 		$(".navigation__collapse").addClass("popup-active");
-	}, 30000);
+	}, 15000);
 
 	$("#popup-close").click((event) => {
 		event.preventDefault();
