@@ -159,14 +159,12 @@
         flex-direction:column;
     }
 
-   #toggle1{
-       margin-right:0px;
+   #toggle1, #toggle2{
+       margin:0px;
        border-radius: 50px;
    }
 
-   #toggle2{
-       margin-left:0px
-   }
+   
 
     .left-speech > span{
         font-size: 20px;

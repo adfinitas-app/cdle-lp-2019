@@ -80,9 +80,7 @@ a.imgKid-container {
 }
 
 @media screen and (max-width: 768px) {
-	#description {
-		background-color: black;
-	}
+	
 
 	#espoir {
 		background-color: black;
