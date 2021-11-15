@@ -8,14 +8,16 @@
 }
 
 .enfant-item{
+    position: relative;
     background-color: white;
     border-radius: 20px;
     flex-basis: 25%;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     height: 320px;
+    
     transition: all 0.6s ease-in-out;
 }
 
@@ -34,6 +36,7 @@
     color: #00B388;
     font-size: 23px;
     font-weight: bold;
+    
 }
 
 .discover{
@@ -47,6 +50,7 @@
     padding: 8px 20px;
     font-size: 17px;
     transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 .discover:hover{
@@ -55,6 +59,8 @@
 
 .discover > svg{
     margin-left: 10px;
+    cursor: pointer;
+
 }
 
 .expand{
@@ -65,13 +71,15 @@
     align-items:left;
     margin:10px 30px;
     font-family: 13px;
+    transition: all 0.5s ease-in-out;
 }
 
 .enfant-main-info{
     display:flex;
     flex-direction:row;
     justify-content:left;
-    align-items:center;
+    align-items:start;
+    margin-bottom: 20px;
 }
 
 .enfant-main-info > .patho{
@@ -82,20 +90,38 @@
 }
 
 .enfant-main-info > div:nth-of-type(1){
-    font-size: 10px;
+    font-size: 11px;
     color: black;
 }
 
 .expand > img{
-    margin-top: 20px;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.expand > img:hover{
+    transform: scale(1.1);
 }
 
 .expand > svg{
-    margin-left:auto;
-    margin-right:auto;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s ease-in-out;
+}
+
+.expand > svg:hover{
+    transform: scale(1.1);
 }
 
 @media(max-width:1000px){
@@ -108,10 +134,22 @@
     }
 
     .enfant-item{
-        width: 80%;
+        min-width: 260px;
+        width: 60%;
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+.appel{
+    color: #F2A900;
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.appel1{
+    font-weight: bold;
+    margin-bottom: 100px;
 }
 
 @media(max-width:500px){

@@ -163,164 +163,411 @@
 			<form id="description">
 				<div class="row">
 					<div id="toggle_menu" class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
-						<div id="toggle1" class="menu-item">ILS ONT BESOIN DE VOUS</div>
-						<div id="toggle2" class="menu-item">SAUVÉS GRÂCE À VOS DONS</div>
+						<div onclick="toggle_menu('toggle1','toggle2')" id="toggle1" class="menu-item">ILS ONT BESOIN DE VOUS</div>
+						<div onclick="toggle_menu('toggle2','toggle1')" id="toggle2" class="menu-item active">SAUVÉS GRÂCE À VOS DONS</div>
 					</div>
-					<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1" id="toggle_content_2">
-						<div class="left-speech">
-							<span>Grâce à votre soutien, La Chaîne de l’Espoir a pu opérer ces 4 enfants.</span>
-							<br />
-							<span>Découvrez leur histoire.</span>
+
+					<div id="toggle1_content">
+						<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+							<div class="left-speech">
+								<span>Rejoignez notre chaîne de vie et sauvez la vie d'un enfant.</span>
+								<br />
+								<span>Chaque don compte.</span>
+							</div>
+							<hr>
+							<div class="right-speech">
+								<span>
+									Près des deux-tiers de la population mondiale n’ont pas accès aux soins chirurgicaux, et parmi eux des milliers d’enfants. 
+									La Chaîne de l’Espoir agit depuis plus de 
+									20 ans pour sauver la vie de ces enfants,
+									pour que tous, où qu’ils naissent, accèdent
+									aux soins.
+								</span>
+							</div>
 						</div>
-						<hr>
-						<div class="right-speech">
-							<span>
-							La Chaîne de l’Espoir accueille et soigne des enfants en France mais intervient également dans de nombreux pays lorsque les infrastructures opératoires le permettent. 
-							Chaque année, plus de 200 000 enfants bénéficient des actions menées par La Chaîne de l’Espoir et plus de 4 000 enfants sont opérés lors des 170 missions terrain.
-							</span>
+
+						<div class="enfants col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+							<div class="enfant-item" style="max-height:900px;">
+								<img class="enfant-photo" src="./assets/mong.jpg">
+								<div class="enfant-info">
+									<span>MÔNG</span><br />
+									1 an et demi, Vietnam
+								</div>
+								<div class="discover" onclick="expand('enfant_1')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_1">
+									<div class="enfant-main-info">
+										<div >Pathologie :&nbsp;</div>
+										<div class="patho">Tétralogie de Fallot</div>
+									</div>
+									<div class="enfant-main-info" style="margin-bottom: 20px;">
+										<div class="cout-op">Coût de l’opération :&nbsp;</div>
+										<div class="patho">2 000 €</div>
+									</div>
+									Mong est née avec une malformation cardiaque congénitale. 
+									Son hypertrophie ventriculaire gauche met sa vie en danger. 
+									Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
+									L’opération chirurgicale qui pourrait guérir Mong est possible. 
+									<br />
+									<br />
+									La Chaine de l’Espoir est mobilisée. 
+									<div class="appel">Aidez-nous ! Passez l’espoir pour Mông, faites un don.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_1')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:900px;">
+								<img class="enfant-photo" src="./assets/madani.jpg">
+								<div class="enfant-info">
+									<span>MADANI</span><br />
+									3 ans, Mali
+								</div>
+								<div class="discover" onclick="expand('enfant_2')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_2">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">Sténose caustique
+											de l’œsophage</div>
+									</div>
+									<div class="enfant-main-info" style="margin-bottom: 20px;">
+										<div class="cout-op">Coût de l’opération&nbsp;:&nbsp;</div>
+										<div class="patho">5&nbsp;000&nbsp;€</div>
+									</div>
+									Madani ne peut plus se nourrir car il a avalé par accident une solution de soude caustique qu’il a pris pour de l’eau. Il souffre d’une sténose caustique de l’œsophage :  la muqueuse brûlée de son estomac s’est rétrécie et ne laisse plus passer les aliments. Sa famille, très pauvre, habite dans un village à 400 km de Bamako et aucune solution médicale n’est possible. Seule une opération chirurgicale pourra le sauver.
+									<br />
+									<br />
+									La Chaîne de l’Espoir est mobilisée.
+									<div class="appel">Aidez-nous ! Passez l’espoir pour Madani, faites un don.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_2')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:900px;">
+								<img class="enfant-photo" src="./assets/demba.jpg">
+								<div class="enfant-info">
+									<span>Demba</span><br />
+									10 mois, Guinée
+								</div>
+								<div class="discover" onclick="expand('enfant_3')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_3">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">Communication
+											interventriculaire
+											(CIV)</div>
+									</div>
+									<div class="enfant-main-info" style="margin-bottom: 20px;">
+										<div class="cout-op">Coût de l’opération&nbsp;:&nbsp;</div>
+										<div class="patho">15&nbsp;000&nbsp;€</div>
+									</div>
+									Depuis sa naissance, Demba souffre d’une insuffisance cardiaque. Il est en détresse respiratoire. Son coeur risque à tout moment de s’arrêter de battre et il n’y a malheureusement aucun chirurgien cardiaque en capacité de l’opérer chez lui, en Guinée. La famille de Demba n’a pas les moyens de financer l’intervention chirurgicale qui sauvera la vie de Demba.
+									<br />
+									<br />
+									La Chaîne de l’Espoir est mobilisée. 
+									<div class="appel">Aidez-nous ! Passez l’espoir pour Demba, faites un don.</div>
+									<img src="assets/BT.png" width="140px" />
+
+									  <svg onclick="reduce('enfant_3')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+									  
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:900px;">
+								<img class="enfant-photo" src="./assets/fara.jpg">
+								<div class="enfant-info">
+									<span>FARA</span><br />
+									6 ans, Madagascar	
+								</div>
+								<div class="discover" onclick="expand('enfant_4')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_4">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">Cardiopathie</div>
+									</div>
+									<div class="enfant-main-info" style="margin-bottom: 20px;">
+										<div class="cout-op">Coût de l’opération&nbsp;:&nbsp;</div>
+										<div class="patho">3&nbsp;000&nbsp;€</div>
+									</div>
+									Seulement 15 jours après sa naissance, Fara toussait beaucoup. Puis les difficultés respiratoires n’ont cessé d’augmenter. Après consultation à l’hôpital Ambohimiandra, un souffle cardiaque fut décelé puis un examen plus approfondi par écho doppler confirma le diagnostic, grave: Fara souffre d’une Persistance du Canal Artériel. Depuis la découverte de la cardiopathie dont souffre leur fille, les parents de Fara espèrent du fond du coeur que Fara pourra être opérée.
+									<br />
+									La Chaîne de l’Espoir est mobilisée. 
+									<div class="appel">Aidez-nous ! Passez l’espoir pour Fara, faites un don.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_4')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					<div id="toggle2_content" class="active">
+
+						<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+							<div class="left-speech">
+								<span>Grâce à votre soutien, La Chaîne de l’Espoir a pu opérer ces 4 enfants.</span>
+								<br />
+								<span>Découvrez leur histoire.</span>
+							</div>
+							<hr>
+							<div class="right-speech">
+								<span>
+								La Chaîne de l’Espoir accueille et soigne des enfants en France mais intervient également dans de nombreux pays lorsque les infrastructures opératoires le permettent. 
+								Chaque année, plus de 200 000 enfants bénéficient des actions menées par La Chaîne de l’Espoir et plus de 4 000 enfants sont opérés lors des 170 missions terrain.
+								</span>
+							</div>
+						</div>
+
+						<div class="enfants col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+							<div class="enfant-item" style="max-height:750px">
+								<img class="enfant-photo" src="./assets/olanda.jpg">
+								<div class="enfant-info">
+									<span>OLANDA</span><br />
+									9 ans, Haïti
+								</div>
+								<div class="discover" onclick="expand('enfant_11')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_11">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">malformation
+											cardiaquE</div>
+									</div>
+									
+
+									
+									Souffrant d’un problème cardiaque grave, Olanda a pu être opérée à cœur ouvert en 2013 à Haïti par les équipes de La Chaîne de l’Espoir. 
+									<br />
+									<br />
+Aujourd’hui elle a désormais 9 ans et est en pleine forme. 
+									<br />
+									<br />
+Mais d’autres enfants sont actuellement en attente de pouvoir être opérés et sauvés.
+									<br />
+									<br />
+									<div class="appel1">Votre don changera leur destin.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_11')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:1000px">
+								<img class="enfant-photo" src="./assets/Bissie_Eyenga.jpg">
+								<div class="enfant-info">
+									<span>Bissie & Eyenga</span><br />
+									2 ans, Cameroun
+								</div>
+								<div class="discover" onclick="expand('enfant_22')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_22">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">nées soeurs siamoises, unies par le foie et
+											la base du thorax</div>
+									</div>
+									Une véritable chaîne de solidarité orchestrée par La Chaîne de l’Espoir s’est mise en place avec l’hôpital de Yaoundé, au Cameroun, les Hospices Civils de Lyon, et nos équipes chirurgicales bénévoles. 
+									<br />
+									<br />
+Après leur arrivée en France, deux opérations consécutives ont été nécessaires. La première a permis de séparer Bissie de sa soeur Eyenga.
+									<br />
+									<br />	
+La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous recevons depuis régulièrement des nouvelles de ces deux fillettes pleine de vie. Mais d’autres enfants sont actuellement en attente de pouvoir être opérés et sauvés.
+									<br />
+									<br />
+									<div class="appel1">Votre don changera leur destin.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_22')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:900px;">
+								<img class="enfant-photo" src="./assets/sourou.jpg">
+								<div class="enfant-info">
+									<span>SOUROU</span><br />
+									3 ans, Bénin
+								</div>
+								<div class="discover" onclick="expand('enfant_33')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_33">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">Brûlure au coude gauche</div>
+									</div>
+									Le jour de son baptême, Sourou s’est très gravement brûlé au coude gauche.
+Hospitalisé en urgence à CHN de Cotonou, il souffre d’une large plaie trainante qui 
+l’empêche de plier son bras.
+									<br />
+									<br />
+En plus d’une douleur vive et persistante, sa plaie a beaucoup de mal à cicatriser. 
+Sans opération chirurgicale avec greffe de peau, Sourou restera handicapé et grandira 
+sans pouvoir plier son bras. La Chaîne de l’Espoir est mobilisée. Aidez-nous ! Passez 
+l’espoir pour Sourou, faites un don.
+									<br />
+									<br />
+									<div class="appel1">Votre don changera leur destin.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_33')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+	
+							<div class="enfant-item" style="max-height:900px">
+								<img class="enfant-photo" src="./assets/yeleen.jpg">
+								<div class="enfant-info">
+									<span>Yeleen</span><br />
+									7 mois, Mali
+								</div>
+								<div class="discover" onclick="expand('enfant_44')">
+									<span>JE DÉCOUVRE</span>
+									<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+										<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+									  </svg>
+								</div>
+								<div class="expand" id="enfant_44">
+									<div class="enfant-main-info">
+										<div >Pathologie&nbsp;:&nbsp;</div>
+										<div class="patho">Fente labiale</div>
+									</div>
+									Encore synonyme de malédiction dans de nombreux pays notamment en Afrique, la fente labiale (communément appelée
+									<br />
+									<br />
+									« bec de lièvre ») dont souffrait Yeleen a été réparée.
+									<br />
+									<br />
+									C’est le Dr. Jean Vendroux qui a pu opérer Yeleen lors d’une mission opératoire au Mali. 
+									<br />
+									<br />
+									Désormais, grâce au soutien de La Chaîne de l’Espoir, la petite fille peut s’alimenter et grandir normalement. D’autres enfants sont actuellement en attente de pouvoir être opérés.
+									<br />
+									<br />
+									<div class="appel1">Votre don changera leur destin.</div>
+									<img src="assets/BT.png" width="140px" />
+									<svg onclick="reduce('enfant_44')" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+										<g id="Groupe_308" data-name="Groupe 308" transform="translate(-212 -13.424)">
+										  <g id="Ellipse_6" data-name="Ellipse 6" transform="translate(212 13.424)" fill="#fff" stroke="#f2a900" stroke-width="2">
+											<circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>
+											<circle cx="15.5" cy="15.5" r="14.5" fill="none"/>
+										  </g>
+										  <g id="Groupe_269" data-name="Groupe 269" transform="translate(219.083 26.939)">
+											<line id="Ligne_53" data-name="Ligne 53" x2="10.676" transform="translate(3.079 1.985)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="2"/>
+										  </g>
+										</g>
+									  </svg>
+								</div>
+							</div>
+							
 						</div>
 					</div>
 					
+
+					
+					
 					
 
-					<div class="enfants col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
-						<div class="enfant-item">
-							<img class="enfant-photo" src="./assets/laura.png">
-							<div class="enfant-info">
-								<span>OLANDA</span><br />
-								9 ans, Haïti
-							</div>
-							<div class="discover" onclick="expand('enfant_1')">
-								<span>JE DÉCOUVRE</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-							<div class="expand" id="enfant_1">
-								<div class="enfant-main-info">
-									<div >Pathologie :&nbsp;</div>
-									<div class="patho">Tétralogie de Fallot</div>
-								</div>
-								<div class="enfant-main-info" style="margin-bottom: 20px;">
-									<div class="cout-op">Coût de l’opération :&nbsp;</div>
-									<div class="patho">2 000 €</div>
-								</div>
-								Mong est née avec une malformation cardiaque congénitale. 
-								Son hypertrophie ventriculaire gauche met sa vie en danger. 
-								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
-								L’opération chirurgicale qui pourrait guérir Mong est possible. 
-								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
-								Passez l’espoir pour Mong, faites un don.
-								<img src="assets/BT.png" width="140px" />
-								<svg onclick="reduce('enfant_1')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-						</div>
+					
 
-						<div class="enfant-item">
-							<img class="enfant-photo" src="./assets/laura.png">
-							<div class="enfant-info">
-								<span>OLANDA</span><br />
-								9 ans, Haïti
-							</div>
-							<div class="discover" onclick="expand('enfant_2')">
-								<span>JE DÉCOUVRE</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-							<div class="expand" id="enfant_2">
-								<div class="enfant-main-info">
-									<div >Pathologie :&nbsp;</div>
-									<div class="patho">Tétralogie de Fallot</div>
-								</div>
-								<div class="enfant-main-info" style="margin-bottom: 20px;">
-									<div class="cout-op">Coût de l’opération :&nbsp;</div>
-									<div class="patho">2 000 €</div>
-								</div>
-								Mong est née avec une malformation cardiaque congénitale. 
-								Son hypertrophie ventriculaire gauche met sa vie en danger. 
-								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
-								L’opération chirurgicale qui pourrait guérir Mong est possible. 
-								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
-								Passez l’espoir pour Mong, faites un don.
-								<img src="assets/BT.png" width="140px" />
-								<svg onclick="reduce('enfant_2')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-						</div>
 
-						<div class="enfant-item">
-							<img class="enfant-photo" src="./assets/laura.png">
-							<div class="enfant-info">
-								<span>OLANDA</span><br />
-								9 ans, Haïti
-							</div>
-							<div class="discover" onclick="expand('enfant_3')">
-								<span>JE DÉCOUVRE</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-							<div class="expand" id="enfant_3">
-								<div class="enfant-main-info">
-									<div >Pathologie :&nbsp;</div>
-									<div class="patho">Tétralogie de Fallot</div>
-								</div>
-								<div class="enfant-main-info" style="margin-bottom: 20px;">
-									<div class="cout-op">Coût de l’opération :&nbsp;</div>
-									<div class="patho">2 000 €</div>
-								</div>
-								Mong est née avec une malformation cardiaque congénitale. 
-								Son hypertrophie ventriculaire gauche met sa vie en danger. 
-								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
-								L’opération chirurgicale qui pourrait guérir Mong est possible. 
-								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
-								Passez l’espoir pour Mong, faites un don.
-								<img src="assets/BT.png" width="140px" />
-								<svg onclick="reduce('enfant_3')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-						</div>
-
-						<div class="enfant-item">
-							<img class="enfant-photo" src="./assets/laura.png">
-							<div class="enfant-info">
-								<span>OLANDA</span><br />
-								9 ans, Haïti
-							</div>
-							<div class="discover" onclick="expand('enfant_4')">
-								<span>JE DÉCOUVRE</span>
-								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-							<div class="expand" id="enfant_4">
-								<div class="enfant-main-info">
-									<div >Pathologie :&nbsp;</div>
-									<div class="patho">Tétralogie de Fallot</div>
-								</div>
-								<div class="enfant-main-info" style="margin-bottom: 20px;">
-									<div class="cout-op">Coût de l’opération :&nbsp;</div>
-									<div class="patho">2 000 €</div>
-								</div>
-								Mong est née avec une malformation cardiaque congénitale. 
-								Son hypertrophie ventriculaire gauche met sa vie en danger. 
-								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
-								L’opération chirurgicale qui pourrait guérir Mong est possible. 
-								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
-								Passez l’espoir pour Mong, faites un don.
-								<img src="assets/BT.png" width="140px" />
-								<svg onclick="reduce('enfant_4')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
-									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
-								  </svg>
-							</div>
-						</div>
-						
-					</div>
+					
 				</div>
 			</form>
 			<!--DON-->
@@ -572,234 +819,8 @@
 						</p>
 				</div>
 			</div>
-			<!-- DON -->
+			
 
-			<!-- <div class="container" style="padding: 90px 10px" id="espoir">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<div class="flex-container">
-							<div>
-								<a
-									class="imgKid-container no-event"
-									href="/andy/?goBack=espoir"
-									onmouseover="changeColor(this)"
-									onmouseout="changeBackColor(this)"
-									style="position: relative; padding: 10px; text-align: center"
-								>
-									<span class="mobile-only Montserrat bold" style="font-size: 20px; color: white"
-										>ANDY</span
-									>
-									<center
-										class="Montserrat blanc_pur bold kidName"
-										style="font-size: 20px; position: relative"
-									>
-										<img
-											src="andy/img/ellipse.png"
-											alt="Andy"
-											class="imgKid"
-											style="width: 155px; height: 155px; border-radius: 50%"
-										/>
-										<img
-											src="assets/ombre.png"
-											class="ombre"
-											style="left: 0px; top: 0px; width: 155px; height: 155px; margin-left: 0"
-										/>
-										<p class="kidDesc orange uppercase">
-											<b>Andy</b>
-										</p>
-									</center>
-								</a>
-							</div>
-							<div>
-								<a
-									class="imgKid-container no-event"
-									href="/mout/?goBack=espoir"
-									onmouseover="changeColor(this)"
-									onmouseout="changeBackColor(this)"
-									style="position: relative; padding: 10px; text-align: center"
-								>
-									<span class="mobile-only Montserrat bold" style="font-size: 20px; color: white"
-										>MOUT</span
-									>
-									<center
-										class="Montserrat blanc_pur bold kidName"
-										style="font-size: 20px; position: relative"
-									>
-										<img
-											src="mout/img/ellipse2.png"
-											alt="Mout"
-											class="imgKid"
-											style="width: 155px; height: 155px; border-radius: 50%"
-										/>
-										<img
-											src="assets/ombre.png"
-											class="ombre"
-											style="left: 0px; top: 0px; width: 155px; height: 155px; margin-left: 0"
-										/>
-										<p class="kidDesc orange uppercase">
-											<b>Mout</b>
-										</p>
-									</center>
-								</a>
-							</div>
-						</div>
-						<div class="flex-container">
-							<div>
-								<a
-									class="imgKid-container no-event"
-									href="/bissie_et_eyenga/?goBack=espoir"
-									onmouseover="changeColor(this)"
-									onmouseout="changeBackColor(this)"
-									style="position: relative; padding: 10px; text-align: center"
-								>
-									<span class="mobile-only Montserrat bold" style="font-size: 20px; color: white"
-										>BISSIE ET EYENGA</span
-									>
-									<center
-										class="Montserrat blanc_pur bold kidName"
-										style="font-size: 20px; position: relative"
-									>
-										<img
-											src="bissie_et_eyenga/img/ellipse2.png"
-											alt="Bissie & Eyenga"
-											class="imgKid"
-											style="width: 155px; height: 155px; border-radius: 50%"
-										/>
-										<img
-											src="assets/ombre.png"
-											class="ombre"
-											style="left: 0px; top: 0px; width: 155px; height: 155px; margin-left: 0"
-										/>
-										<p class="kidDesc orange uppercase">
-											<b
-												>Bissie et<br />
-												Eyenga</b
-											>
-										</p>
-									</center>
-								</a>
-							</div>
-							<div>
-								<a
-									class="imgKid-container no-event"
-									href="/fanta/?goBack=espoir"
-									onmouseover="changeColor(this)"
-									onmouseout="changeBackColor(this)"
-									style="position: relative; padding: 10px; text-align: center"
-								>
-									<span class="mobile-only Montserrat bold" style="font-size: 20px; color: white"
-										>FANTA</span
-									>
-
-									<center
-										class="Montserrat blanc_pur bold kidName"
-										style="font-size: 20px; position: relative"
-									>
-										<img
-											src="fanta/img/ellipse2.png"
-											alt="Fanta"
-											class="imgKid"
-											style="width: 155px; height: 155px; border-radius: 50%"
-										/>
-										<img
-											src="assets/ombre.png"
-											class="ombre"
-											style="left: 0px; top: 0px; width: 155px; height: 155px; margin-left: 0"
-										/>
-										<p class="kidDesc orange uppercase">
-											<b>Fanta</b>
-										</p>
-									</center>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<p
-							class="uppercase bold Montserrat"
-							style="font-size: 50px; line-height: 1.2; margin-top: 20px"
-						>
-							<span class="jaune">Comme des<br />milliers d'autres<br />Enfants, ils ont</span
-							><br /><span class="blanc_pur">reçu l'espoir</span>
-						</p>
-						<hr
-							style="width: 10vw; border-color: #f9b000; border-top: 3px solid #f9b000"
-							align="left"
-						/>
-						<p class="blanc_pur Montserrat" style="font-size: 20px">
-							Chacun de vos dons a contribué à former une véritable chaîne de solidarité autour de
-							milliers d'enfants, qui vont maintenant pouvoir grandir normalement.<br />
-							Merci d’avoir été à leurs côtés.
-						</p>
-					</div> 
-				</div>
-			</div> -->
-
-			<!-- SECTION ALAIN DELOCHE -->
-		<!--<section id="alain-deloche">
-				<div class="row">
-					<div class="col-xs-12 col-md-6">
-						<p class="title">« Leur vie,<br />c’est ma vie. »</p>
-						<p class="subtitle">
-							Pr Alain Deloche<br />
-							<span style="font-size: 16px; font-weight: normal">Éditions du Cherche midi</span>
-						</p>
-						<div class="decouvrez">
-							Découvrez ou redécouvrez l’engagement du Pr&nbsp;Alain&nbsp;Deloche, premier maillon
-							de La Chaîne de l’Espoir
-							<p class="collapse" id="text-more">
-								Dans un magnifique livre-témoignage, le Pr Alain Deloche revient sur son engagement
-								auprès de l'enfance en danger et nous raconte des moments d'une force incroyable
-								comme la première opération à cœur ouvert au Mali. C'est l'histoire de Fanta et elle
-								résume l'engagement de La Chaîne de l'Espoir qui a sauvé 200 000 enfants en 2019, et
-								des millions d'autres depuis sa création il y a plus de 25 ans.
-								<span
-									class="more"
-									data-toggle="collapse"
-									data-target="#text-more"
-									aria-expanded="false"
-									aria-controls="More"
-									>Voir moins</span
-								>
-							</p>
-							<span
-								class="more"
-								data-toggle="collapse"
-								data-target="#text-more"
-								aria-expanded="false"
-								aria-controls="More"
-								>lire la suite…</span
-							>
-						</div>
-					</div>
-				</div>
-				<div class="flex-row">
-					<p>Découvrez les extraits du livre consacrés à Fanta :</p>
-					<div class="picto-row ecouter">
-						<span class="img-wrapper">
-							<img src="assets/picto-ecouter.png" />
-						</span>
-						<span>ÉCOUTER</span>
-						<div class="my-hide">
-							<audio controls src="assets/alain-deroche.mp3">
-								Your browser does not support the
-								<code>audio</code> element.
-							</audio>
-						</div>
-					</div>
-					<a
-						class="picto-row"
-						target="_blank"
-						href="https://www.calameo.com/read/004828873d00f2642146c"
-					>
-						<span class="img-wrapper">
-							<img src="assets/picto-lire.png" />
-						</span>
-						<span>LIRE</span>
-					</a>
-				</div>
-			</section>  -->
-			<!-- END SECTION ALAIN DELOCHE -->
 
 			<!--FOOTER-->
 			<form id="footer blanc_pur_bg" style="background-color: white">
@@ -1071,9 +1092,9 @@
 			</form>
 			<!-- FOOTER -->
 			<!--STICKY-->
-			<div id="sticky_don">
+			<div id="sticky_don" style="z-index:10;">
 				<a href="https://donner.chainedelespoir.org/b?cid=244" target="_blank" class="uconc">
-					<img src="assets/BT.png" id="don_button_header" />
+					<img src="assets/BT.png" id="don_button_header"  />
 				</a>
 				
 			</div>
