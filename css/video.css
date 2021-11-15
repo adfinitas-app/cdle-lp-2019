@@ -1,8 +1,17 @@
 .play_button_video {
-    transition: all .2s ease-in-out;    
+    transition: all .2s ease-in-out; 
+    width:180px;
+    height:180px;   
 }
 
 .play_button_video:hover {
     transform: scale(1.1);
-    background-color: #f9c900;    
+    background-color: #00000052;    
+}
+
+@media(max-width:1000px){
+    .play_button_video{
+        width:80px;
+        height:80px;
+    }
 }

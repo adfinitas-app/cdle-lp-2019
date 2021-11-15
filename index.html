@@ -40,7 +40,8 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/basics.css" />
 		<link rel="stylesheet" type="text/css" href="css/enfant.css" />
-		<link rel="stylesheet" type="text/css" href="css/alain.css" />
+		<link rel="stylesheet" type="text/css" href="css/toggle_menu.css" />
+		<link rel="stylesheet" type="text/css" href="css/enfants.css" />
 		<meta property="og:url" content="https://jepasselespoir.chainedelespoir.org/" />
 		<link rel="icon" href="assets/favicon.png" />
 		<meta property="og:title" content="" />
@@ -60,7 +61,8 @@
 
 	<body
 		style="
-			background-image: url(assets/background.png);
+			background-image: url(assets/background_2021.png);
+			background-color: black;
 			background-size: 100% auto;
 			margin: 0px;
 			background-attachment: fixed;
@@ -80,7 +82,7 @@
 		<div id="Home_Page">
 			<!--HEADER-->
 			<div id="logoHeader" style="position: absolute; z-index: 9999; top: 2vw; left: 2vw">
-				<img src="assets/logo25.png" style="width: 10vw" />
+				<img src="assets/logo.png" style="width: 10vw" />
 			</div>
 			<div
 				id="animation_container"
@@ -120,10 +122,10 @@
 				style="
 					height: 100%;
 					width: 100%;
-					background-color: black;
+					background-color: #008895;
 					position: relative;
 					background-size: cover;
-					padding: 0;
+					padding: 5% 7%;
 				"
 				id="video_div"
 			>
@@ -143,16 +145,15 @@
 						right: 0;
 						bottom: 0;
 						left: 0;
-						height: 100px;
-						width: 100px;
 						margin: auto;
-						border-radius: 50px;
+						border-radius: 100px;
 						cursor: pointer;
+						background-color: #ffffff47;
 					"
-					class="jaune_bg play_button_video"
+					class="play_button_video"
 				>
 					<img
-						src="assets/play.png"
+						src="assets/play_2021.png"
 						height="50%"
 						style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; margin: auto"
 					/>
@@ -161,190 +162,174 @@
 			<!--DESCRIPTION-->
 			<form id="description">
 				<div class="row">
-					<div class="col-lg-1"></div>
-					<div class="col-lg-10" style="padding-top: 80px">
-						<div class="row">
-							<div class="col-lg-4 col-lg-offset-0 col-md-6 col-md-offset-3">
-								<span
-									class="Montserrat bold uppercase"
-									style="font-size: 45px; color: #f9b000; line-height: 50px"
-									>Rejoignez<br />notre chaîne<br
-								/></span>
-								<span
-									class="Montserrat blanc_pur bold uppercase"
-									style="font-size: 45px; line-height: 50px"
-									>et sauvez<br />
-									des vies.<br
-								/></span>
-								<div
-									style="
-										width: 200px;
-										height: 1px;
-										border-width: 2px;
-										border-radius: 2px;
-										border-color: #f9b000;
-										border-style: solid;
-										margin-top: 15px;
-									"
-								></div>
-								<div style="padding-right: 80px">
-									<span class="Montserrat blanc_pur" style="font-size: 18px">
-										<br />Partout dans le monde, des millions d’enfants sont condamnés faute d’accès
-										à des soins médicaux. Pour les sauver et leur offrir les mêmes chances de survie
-										et de développement, La Chaîne de l’Espoir soigne et opère les enfants,
-										contribue à la prévention sanitaire et au dépistage des écoliers, forme des
-										équipes médicales locales et construit des structures de santé adaptées dans
-										près de 30 pays. <br /><br />
-										Faites rayonner l'espoir par-delà les frontières et sauvez la vie d'un enfant
-										comme Arun ou Issa. Chaque don compte.<br />
-										Merci d'être à leurs côtés.<br /><br /><br />
-									</span>
-								</div>
-							</div>
-							<div class="col-lg-8 col-md-12 col-xs-12" style="padding-top: 40px">
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/diego/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												DIEGO<br /><br />
-												<img
-													src="diego/img/ellipse.png"
-													alt="Diego"
-													class="imgKid"
-													id="diego"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase"><b>8 ans</b><br />Madagascar</p>
-											</center>
-										</a>
-									</div>
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/kami/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												KAMI<br /><br />
-												<img
-													src="kami/img/ellipse.png"
-													alt="Kami"
-													class="imgKid"
-													id="kami"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase"><b>2 ans</b><br />Liban</p>
-											</center>
-										</a>
-									</div>
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/sokha/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												SOKHA<br /><br />
-												<img
-													src="sokha/img/ellipse.png"
-													alt="Sokha"
-													class="imgKid"
-													id="sokha"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase"><b>2 ans</b><br />Cambodge</p>
-											</center>
-										</a>
-									</div>
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/yeleen/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												YELEEN<br /><br />
-												<img
-													src="yeleen/img/ellipse.png"
-													alt="Sokha"
-													class="imgKid"
-													id="yeleen"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase"><b>7 mois</b><br />Mali</p>
-											</center>
-										</a>
-									</div>
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/arun/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												ARUN<br /><br />
-												<img
-													src="arun/img/ellipse.png"
-													alt="Arun"
-													class="imgKid"
-													id="arun"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase"><b>18 mois</b><br />Cambodge</p>
-											</center>
-										</a>
-									</div>
-									<div class="col-lg-6 col-md-6 col-xs-12" style="margin-bottom: 40px">
-										<a
-											class="imgKid-container"
-											href="/issa/?goBack=description"
-											onmouseover="changeColor(this)"
-											onmouseout="changeBackColor(this)"
-										>
-											<center class="Montserrat blanc_pur bold kidName" style="font-size: 20px">
-												ISSA<br /><br />
-												<img
-													src="issa/img/ellipse.png"
-													alt="Issa"
-													class="imgKid"
-													id="issa"
-													style="width: 200px; height: 200px; border-radius: 100px"
-												/>
-												<img src="assets/ombre.png" class="ombre" />
-												<p class="kidDesc orange uppercase">
-													<b>2 ans</b><br /><span style="font-size: 18px">Burkina Faso</span>
-												</p>
-											</center>
-										</a>
-									</div>
-								</div>
-							</div>
+					<div id="toggle_menu" class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+						<div id="toggle1" class="menu-item">ILS ONT BESOIN DE VOUS</div>
+						<div id="toggle2" class="menu-item">SAUVÉS GRÂCE À VOS DONS</div>
+					</div>
+					<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1" id="toggle_content_2">
+						<div class="left-speech">
+							<span>Grâce à votre soutien, La Chaîne de l’Espoir a pu opérer ces 4 enfants.</span>
+							<br />
+							<span>Découvrez leur histoire.</span>
+						</div>
+						<hr>
+						<div class="right-speech">
+							<span>
+							La Chaîne de l’Espoir accueille et soigne des enfants en France mais intervient également dans de nombreux pays lorsque les infrastructures opératoires le permettent. 
+							Chaque année, plus de 200 000 enfants bénéficient des actions menées par La Chaîne de l’Espoir et plus de 4 000 enfants sont opérés lors des 170 missions terrain.
+							</span>
 						</div>
 					</div>
-					<div class="col-lg-1"></div>
+					
+					
+
+					<div class="enfants col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+						<div class="enfant-item">
+							<img class="enfant-photo" src="./assets/laura.png">
+							<div class="enfant-info">
+								<span>OLANDA</span><br />
+								9 ans, Haïti
+							</div>
+							<div class="discover" onclick="expand('enfant_1')">
+								<span>JE DÉCOUVRE</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+							<div class="expand" id="enfant_1">
+								<div class="enfant-main-info">
+									<div >Pathologie :&nbsp;</div>
+									<div class="patho">Tétralogie de Fallot</div>
+								</div>
+								<div class="enfant-main-info" style="margin-bottom: 20px;">
+									<div class="cout-op">Coût de l’opération :&nbsp;</div>
+									<div class="patho">2 000 €</div>
+								</div>
+								Mong est née avec une malformation cardiaque congénitale. 
+								Son hypertrophie ventriculaire gauche met sa vie en danger. 
+								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
+								L’opération chirurgicale qui pourrait guérir Mong est possible. 
+								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
+								Passez l’espoir pour Mong, faites un don.
+								<img src="assets/BT.png" width="140px" />
+								<svg onclick="reduce('enfant_1')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+						</div>
+
+						<div class="enfant-item">
+							<img class="enfant-photo" src="./assets/laura.png">
+							<div class="enfant-info">
+								<span>OLANDA</span><br />
+								9 ans, Haïti
+							</div>
+							<div class="discover" onclick="expand('enfant_2')">
+								<span>JE DÉCOUVRE</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+							<div class="expand" id="enfant_2">
+								<div class="enfant-main-info">
+									<div >Pathologie :&nbsp;</div>
+									<div class="patho">Tétralogie de Fallot</div>
+								</div>
+								<div class="enfant-main-info" style="margin-bottom: 20px;">
+									<div class="cout-op">Coût de l’opération :&nbsp;</div>
+									<div class="patho">2 000 €</div>
+								</div>
+								Mong est née avec une malformation cardiaque congénitale. 
+								Son hypertrophie ventriculaire gauche met sa vie en danger. 
+								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
+								L’opération chirurgicale qui pourrait guérir Mong est possible. 
+								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
+								Passez l’espoir pour Mong, faites un don.
+								<img src="assets/BT.png" width="140px" />
+								<svg onclick="reduce('enfant_2')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+						</div>
+
+						<div class="enfant-item">
+							<img class="enfant-photo" src="./assets/laura.png">
+							<div class="enfant-info">
+								<span>OLANDA</span><br />
+								9 ans, Haïti
+							</div>
+							<div class="discover" onclick="expand('enfant_3')">
+								<span>JE DÉCOUVRE</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+							<div class="expand" id="enfant_3">
+								<div class="enfant-main-info">
+									<div >Pathologie :&nbsp;</div>
+									<div class="patho">Tétralogie de Fallot</div>
+								</div>
+								<div class="enfant-main-info" style="margin-bottom: 20px;">
+									<div class="cout-op">Coût de l’opération :&nbsp;</div>
+									<div class="patho">2 000 €</div>
+								</div>
+								Mong est née avec une malformation cardiaque congénitale. 
+								Son hypertrophie ventriculaire gauche met sa vie en danger. 
+								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
+								L’opération chirurgicale qui pourrait guérir Mong est possible. 
+								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
+								Passez l’espoir pour Mong, faites un don.
+								<img src="assets/BT.png" width="140px" />
+								<svg onclick="reduce('enfant_3')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+						</div>
+
+						<div class="enfant-item">
+							<img class="enfant-photo" src="./assets/laura.png">
+							<div class="enfant-info">
+								<span>OLANDA</span><br />
+								9 ans, Haïti
+							</div>
+							<div class="discover" onclick="expand('enfant_4')">
+								<span>JE DÉCOUVRE</span>
+								<svg xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+							<div class="expand" id="enfant_4">
+								<div class="enfant-main-info">
+									<div >Pathologie :&nbsp;</div>
+									<div class="patho">Tétralogie de Fallot</div>
+								</div>
+								<div class="enfant-main-info" style="margin-bottom: 20px;">
+									<div class="cout-op">Coût de l’opération :&nbsp;</div>
+									<div class="patho">2 000 €</div>
+								</div>
+								Mong est née avec une malformation cardiaque congénitale. 
+								Son hypertrophie ventriculaire gauche met sa vie en danger. 
+								Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
+								L’opération chirurgicale qui pourrait guérir Mong est possible. 
+								La Chaine de l’Espoir est mobilisée. Aidez-nous ! 
+								Passez l’espoir pour Mong, faites un don.
+								<img src="assets/BT.png" width="140px" />
+								<svg onclick="reduce('enfant_4')" xmlns="http://www.w3.org/2000/svg" width="18.545" height="18.545" viewBox="0 0 18.545 18.545">
+									<path id="Tracé_342" data-name="Tracé 342" d="M49.72-59.552H43.1v-6.623A1.323,1.323,0,0,0,41.772-67.5a1.323,1.323,0,0,0-1.325,1.325v6.623H33.825A1.323,1.323,0,0,0,32.5-58.228,1.323,1.323,0,0,0,33.825-56.9h6.623v6.623a1.323,1.323,0,0,0,1.325,1.325A1.323,1.323,0,0,0,43.1-50.28V-56.9H49.72a1.323,1.323,0,0,0,1.325-1.325A1.323,1.323,0,0,0,49.72-59.552Z" transform="translate(-32.5 67.5)" fill="#f2a900"/>
+								  </svg>
+							</div>
+						</div>
+						
+					</div>
 				</div>
 			</form>
 			<!--DON-->
 			<div
 				class="container-fluid"
-				style="min-height: 100vh; width: 100%; background-color: rgba(249, 176, 0, 0.8)"
+				style="min-height: 100vh; width: 100%; background-color: #00afbf80"
 				id="don_page_enfant"
 			>
-				<div class="row titles_don" style="">
+				<div class="row titles_don">
 					<div
 						class="col-lg-12 text-center"
 						style="
@@ -373,29 +358,30 @@
 										<div class="row" style="height: 80%">
 											<div class="col-lg-12">
 												<div class="row noir_pur dosis bold number_don_central" style="height: 40%">
-													<div class="real_price_don"></div>
-													<div class="rotate_75_don Montserrat">11 €*</div>
 													<div
 														class="col-xs-12 black"
-														style="display: flex; margin: auto; justify-content: center"
+														style="display: flex; margin: auto; justify-content: center; height: 100px;"
 													>
-														45
+														60
 														<div style="font-size: 55px; padding-left: 10px; padding-top: 10px">
 															&#8239;€
 														</div>
+													</div>
+													<div class="deduc-fisc">
+														<span class="deduc-fisc-prix">soit 15 € </span><br />
+														après déduction fiscale de 75 %
 													</div>
 												</div>
 												<div
 													style="margin-bottom: 15px"
 													class="description_column_don text-center Montserrat noir_pur"
 												>
-													Si 12 personnes font un don de 45€ avec vous, vous permettez à un enfant
-													d’être opéré d’un «&nbsp;bec de lièvre&nbsp;» dans son pays.<br />
+												Si 9 personnes font un don de 60€ avec vous,  l’opération sur place d’un enfant souffrant d’une fente labiale pourra être financée.<br />
 												</div>
 											</div>
 										</div>
 										<div class="row" style="height: 15%">
-											<div class="col-lg-12" style="margin-bottom: 10px">
+											<div class="col-lg-12" style="margin-bottom: 20px">
 												<a
 													href="https://donner.chainedelespoir.org/b?cid=244&amount=4500"
 													target="_blank"
@@ -420,9 +406,7 @@
 														</span>
 													</div>
 												</a>
-												<span class="fiscale_don"
-													><br />* Montant après déduction fiscale de 75%
-												</span>
+									
 											</div>
 										</div>
 									</a>
@@ -440,30 +424,33 @@
 										<div class="row" style="height: 80%">
 											<div class="col-lg-12">
 												<div class="row noir_pur dosis bold number_don_central" style="height: 40%">
-													<div class="real_price_don"></div>
-													<div class="rotate_75_don Montserrat">15 €*</div>
+													
 													<div
 														class="col-xs-12 black"
-														style="display: flex; margin: auto; justify-content: center"
+														style="display: flex; margin: auto; justify-content: center; height: 100px;"
 													>
-														60
+														85
 														<div style="font-size: 55px; padding-left: 10px; padding-top: 10px">
 															&#8239;€
 														</div>
+													</div>
+													<div class="deduc-fisc">
+														<span class="deduc-fisc-prix">soit 21 € </span><br />
+														après déduction fiscale de 75 %
 													</div>
 												</div>
 												<div
 													style="margin-bottom: 15px"
 													class="description_column_don text-center Montserrat noir_pur"
 												>
-													Si 48 personnes font un don de 60€ avec vous, vous permettez à un enfant
-													cardiaque d’être opéré sur place.<br />
+												Si 34 personnes font un don de 85 € avec vous, vous permettez à un enfant cardiaque d’être opéré sur place.
+												<br />
 													<br /><br class="showTransition" />
 												</div>
 											</div>
 										</div>
 										<div class="row" style="height: 15%">
-											<div class="col-lg-12" style="margin-bottom: 10px">
+											<div class="col-lg-12" style="margin-bottom: 20px">
 												<a
 													href="https://donner.chainedelespoir.org/b?cid=244&amount=6000"
 													target="_blank"
@@ -488,9 +475,7 @@
 														>
 													</div>
 												</a>
-												<span class="fiscale_don"
-													><br />* Montant après déduction fiscale de 75%</span
-												>
+												
 											</div>
 										</div>
 									</a>
@@ -508,30 +493,34 @@
 										<div class="row" style="height: 80%">
 											<div class="col-lg-12">
 												<div class="row noir_pur dosis bold number_don_central" style="height: 40%">
-													<div class="real_price_don"></div>
-													<div class="rotate_75_don Montserrat">25 €*</div>
+													
 													<div
 														class="col-xs-12 black"
-														style="display: flex; margin: auto; justify-content: center"
+														style="display: flex; margin: auto; justify-content: center; height: 100px"
 													>
-														100
+														120
 														<div style="font-size: 55px; padding-left: 10px; padding-top: 10px">
 															€
 														</div>
 													</div>
+													<div class="deduc-fisc">
+														<span class="deduc-fisc-prix">soit 30 € </span><br />
+														après déduction fiscale de 75 %
+													</div>
 												</div>
+												
 												<div
 													style="margin-bottom: 15px"
 													class="description_column_don text-center Montserrat noir_pur"
 												>
-													Si 120 personnes font un don de 100€ avec vous, vous permettez à un enfant
-													d’être transféré et opéré en France.<br />
+												Si 99 personnes font un don de 120 € avec vous, vous permettez à un enfant d’être transféré et opéré en France.
+												<br />
 													<br /><br class="showTransition" />
 												</div>
 											</div>
 										</div>
 										<div class="row" style="height: 15%">
-											<div class="col-lg-12" style="margin-bottom: 10px">
+											<div class="col-lg-12" style="margin-bottom: 20px">
 												<a
 													href="https://donner.chainedelespoir.org/b?cid=244&amount=10000"
 													target="_blank"
@@ -556,9 +545,7 @@
 														>
 													</div>
 												</a>
-												<span class="fiscale_don"
-													><br />* Montant après déduction fiscale de 75%</span
-												>
+												
 											</div>
 										</div>
 									</a>
@@ -568,36 +555,26 @@
 					</div>
 				</div>
 
-				<div class="container-text-don">
-					<p class="blanc_pur Montserrat bold plafond">
-						Le plafond
-						<span class="noir_pur">des dons déductibles de l’impôt sur le revenu</span> augmente
-					</p>
-					<div class="desktop-only">
-						<img src="../assets/arrow-right.png" />
-					</div>
-					<p class="blanc_pur Montserrat vous-pouvez desktop-only">
-						En 2020, vous pouvez déduire jusqu’à <span class="noir_pur">1 000 €</span> de dons à
-						hauteur de 75%
-					</p>
-					<div class="mobile-only">
-						<div style="display: flex; flex-direction: row; margin-top: 10px">
-							<div style="width: 31px">
-								<img src="../assets/arrow-right.png" style="margin-left: 0; margin-right: 5px" />
-							</div>
-							<div>
-								<p class="blanc_pur Montserrat vous-pouvez">
-									En 2020, vous pouvez déduire jusqu’à <span class="noir_pur">1 000 €</span> de dons
-									à hauteur de 75%
-								</p>
-							</div>
+				<div class="container-text-don col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
+					
+						<p class="blanc_pur Montserrat bold plafond">
+							75% du montant de votre don
+							<span class="noir_pur">sont déductibles de votre impôt sur le revenu</span> dans la limite de 1 000 €.
+						</p>
+						<div class="desktop-only">
+							<img src="./assets/arrow-right.png" />
 						</div>
-					</div>
+						<div class="mobile-only">
+							<img src="./assets/arrow-down.png" style="margin: 20px;" />
+						</div>
+						<p class="blanc_pur Montserrat vous-pouvez ">
+							Faites  <span class="noir_pur">votre don avant le 31 décembre 2021 </span> pour en bénéficier cette année.
+						</p>
 				</div>
 			</div>
 			<!-- DON -->
 
-			<div class="container" style="padding: 90px 10px" id="espoir">
+			<!-- <div class="container" style="padding: 90px 10px" id="espoir">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
 						<div class="flex-container">
@@ -754,12 +731,12 @@
 							milliers d'enfants, qui vont maintenant pouvoir grandir normalement.<br />
 							Merci d’avoir été à leurs côtés.
 						</p>
-					</div>
+					</div> 
 				</div>
-			</div>
+			</div> -->
 
 			<!-- SECTION ALAIN DELOCHE -->
-			<section id="alain-deloche">
+		<!--<section id="alain-deloche">
 				<div class="row">
 					<div class="col-xs-12 col-md-6">
 						<p class="title">« Leur vie,<br />c’est ma vie. »</p>
@@ -821,7 +798,7 @@
 						<span>LIRE</span>
 					</a>
 				</div>
-			</section>
+			</section>  -->
 			<!-- END SECTION ALAIN DELOCHE -->
 
 			<!--FOOTER-->
@@ -848,9 +825,9 @@
 										"
 									></div>
 									<span class="Montserrat noir_pur" style="font-size: 18px">
-										<br />La Chaîne de l’Espoir est une association française qui vient en aide aux
-										enfants démunis. Depuis 1994, nous agissons dans le monde entier pour leur
-										donner accès aux soins.
+										<br />La Chaîne de l’Espoir est une ONG internationale fondée en 1994. 
+										Elle a pour vocation de renforcer les systèmes de santé pour donner à chacun 
+										et en particulier aux enfants les mêmes chances de survie et de développement.
 									</span>
 								</div>
 							</div>
@@ -862,12 +839,12 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12">
-												<img src="../assets/hands.png" alt="handshake" />
+												<img src="./assets/hands.png" alt="handshake" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="jaune nbr_footer bold Montserrat">25</span>
+												<span class="jaune nbr_footer bold Montserrat">27</span>
 											</div>
 										</div>
 										<div class="row">
@@ -887,17 +864,17 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12" style="margin-bottom: 4px">
-												<img src="../assets/scissors.png" alt="ciseaux" />
+												<img src="./assets/scissors.png" alt="ciseaux" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="jaune nbr_footer bold Montserrat">4 400</span>
+												<span class="jaune nbr_footer bold Montserrat">4 600</span>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="Montserrat noir_pur desc_nbr bold">Enfants opérés / an</span>
+												<span class="Montserrat noir_pur desc_nbr bold">Enfants opérés</span>
 											</div>
 										</div>
 									</center>
@@ -909,19 +886,19 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12" style="margin-bottom: 7px">
-												<img src="../assets/health.png" alt="santé" />
+												<img src="./assets/health.png" alt="santé" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="jaune nbr_footer bold Montserrat">235 000</span>
+												<span class="jaune nbr_footer bold Montserrat">210 000</span>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
 												<span class="Montserrat noir_pur desc_nbr bold"
-													>Enfants bénéficiaires des<br />
-													programmes de soins / an</span
+													>Bénéficiaires<br />
+													des programmes</span
 												>
 											</div>
 										</div>
@@ -934,19 +911,19 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12" style="margin-bottom: 5px">
-												<img src="../assets/world.png" alt="monde" />
+												<img src="./assets/world.png" alt="monde" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="jaune nbr_footer bold Montserrat">170</span>
+												<span class="jaune nbr_footer bold Montserrat">28</span>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
 												<span class="Montserrat noir_pur desc_nbr bold"
-													>Missions<br />
-													internationales / an
+													>Pays<br />
+													d’intervention
 												</span>
 											</div>
 										</div>
@@ -959,17 +936,19 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12" style="margin-bottom: 1px">
-												<img src="../assets/countries2.png" alt="pays" />
+												<img src="./assets/doctor.png" alt="docteur" />
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="jaune nbr_footer bold Montserrat">27</span>
+												<span class="jaune nbr_footer bold Montserrat">290</span>
 											</div>
 										</div>
 										<div class="row">
 											<div class="col-lg-12">
-												<span class="Montserrat noir_pur desc_nbr bold">Pays</span>
+												<span class="Montserrat noir_pur desc_nbr bold">
+													Bénévoles programmes, <br />
+													antennes ou siège </span>
 											</div>
 										</div>
 									</center>
@@ -981,7 +960,7 @@
 									<center>
 										<div class="row">
 											<div class="col-lg-12" style="margin-bottom: 2px">
-												<img src="../assets/family.png" alt="famille" />
+												<img src="./assets/family.png" alt="famille" />
 											</div>
 										</div>
 										<div class="row">
@@ -993,7 +972,8 @@
 											<div class="col-lg-12">
 												<span class="Montserrat noir_pur desc_nbr bold"
 													>Familles d'accueil <br />
-													bénévoles mobilisées</span
+													bénévoles mobilisées <br />
+													partout en France</span
 												>
 											</div>
 										</div>
@@ -1008,7 +988,7 @@
 								style="text-align: center; align-items: center; border-right: #d7d7d7 solid 1px"
 							>
 								<center>
-									<img src="../assets/logo25.png" alt="logo Chaine de l'espoir" />
+									<img src="./assets/logo.png" alt="logo Chaine de l'espoir" />
 								</center>
 							</div>
 							<div class="col-lg-6 col-md-12 col-xs-12">
@@ -1019,13 +999,13 @@
 										id="footer-left"
 									>
 										<a href="https://www.chainedelespoir.org/" target="_blank">
-											<span class="uppercase grey">la chaîne de l'espoir</span>
+											<span class="uppercase grey Montserrat bold" style="font-size: 15px;">la&nbsp;chaîne&nbsp;de&nbsp;l'espoir</span>
 										</a>
 									</div>
 									<div class="col-lg-4 col-md-4 col-xs-12" style="padding-top: 45px">
 										<center>
 											<a href="https://www.chainedelespoir.org/fr/contactez-nous" target="_blank">
-												<span class="uppercase grey">nous contacter</span>
+												<span class="uppercase grey Montserrat bold" style="font-size: 15px;">nous contacter</span>
 											</a>
 										</center>
 									</div>
@@ -1035,7 +1015,7 @@
 										id="footer-right"
 									>
 										<a href="https://www.chainedelespoir.org/fr/mentions-legales" target="_blank">
-											<span class="uppercase grey">mentions légales</span>
+											<span class="uppercase grey Montserrat bold" style="font-size: 15px;">mentions légales</span>
 										</a>
 									</div>
 								</div>
@@ -1050,12 +1030,12 @@
 										style="text-align: center"
 									>
 										<a href="http://www.donenconfiance.org/" target="_blank">
-											<img src="../assets/DDC.png" style="width: 50px" />
+											<img src="./assets/confianc_logo.png" style="width: 60px" />
 										</a>
 									</div>
 									<div class="col-lg-4 col-xs-6 no-padding" style="text-align: center">
 										<a href="https://ideas.asso.fr/" target="_blank">
-											<img src="../assets/IDEAS.png" style="width: 120px" />
+											<img src="./assets/label.png" style="width: 100px; padding-top: 10px;" />
 										</a>
 									</div>
 								</div>
@@ -1065,30 +1045,22 @@
 								style="padding-top: 34px; margin-bottom: 20px"
 							>
 								<div class="row" style="padding-right: 15px">
-									<div class="col-lg-3 col-xs-3 no-padding" style="text-align: center">
+									<div class="col-lg-4 col-xs-4 no-padding" style="text-align: center">
 										<a href="https://www.facebook.com/chainedelespoir/" target="_blank">
-											<img src="../assets/fb.png" style="width: 40px" />
-										</a>
-									</div>
-									<div class="col-lg-3 col-xs-3 no-padding" style="text-align: center">
-										<a href="https://www.instagram.com/chainedelespoir/" target="_blank">
-											<img src="../assets/inst.png" style="width: 40px" />
+											<img src="./assets/fb.png" style="width: 40px" />
 										</a>
 									</div>
 									<div
-										class="col-lg-3 col-xs-3 no-padding"
+										class="col-lg-4 col-xs-4 no-padding"
 										style="text-align: center; align-items: center"
 									>
 										<a href="https://twitter.com/chainedelespoir" target="_blank">
-											<img src="../assets/tw.png" style="width: 40px" />
+											<img src="./assets/tw.png" style="width: 40px" />
 										</a>
 									</div>
-									<div
-										class="col-lg-3 col-xs-3 no-padding"
-										style="text-align: center; align-items: right"
-									>
-										<a href="https://www.youtube.com/user/LaChainedelEspoir	" target="_blank">
-											<img src="../assets/yt.png" style="width: 40px" />
+									<div class="col-lg-4 col-xs-4 no-padding" style="text-align: center">
+										<a href="https://www.instagram.com/chainedelespoir/" target="_blank">
+											<img src="./assets/insta.png" style="width: 40px" />
 										</a>
 									</div>
 								</div>
@@ -1103,12 +1075,7 @@
 				<a href="https://donner.chainedelespoir.org/b?cid=244" target="_blank" class="uconc">
 					<img src="assets/BT.png" id="don_button_header" />
 				</a>
-				<p
-					class="Montserrat bold text-right"
-					style="color: #007d8a; margin-top: 7px; margin-bottom: 0"
-				>
-					#oncontinuedagir
-				</p>
+				
 			</div>
 		</div>
 
@@ -1116,7 +1083,7 @@
 		<div class="popup">
 			<div class="popup__msg">
 				<p>
-					<b>En 2020, vous pouvez déduire jusqu’à 1 000 € de dons à hauteur de 75%. <span>Faites un don avant le 31 décembre pour en bénéficier.</span></b>
+					<b>En 2021, vous pouvez déduire jusqu’à 1 000 € de dons à hauteur de 75%. <span>Faites un don avant le 31 décembre pour en bénéficier.</span></b>
 				</p>
 			</div>
 			<div class="popup__control">
@@ -1127,10 +1094,11 @@
 						height="11.086"
 						viewBox="0 0 11.086 11.086"
 					>
-						<g id="Group_196" data-name="Group 196" opacity="0.3">
+						<g id="Group_196" data-name="Group 196" opacity="1">
 							<path
 								id="Path_151"
 								data-name="Path 151"
+								fill="white"
 								d="M34.918-75.918a.426.426,0,0,0-.6,0L29.5-71.1l-4.816-4.816a.426.426,0,0,0-.6,0,.426.426,0,0,0,0,.6L28.9-70.5l-4.816,4.816a.426.426,0,0,0,0,.6.426.426,0,0,0,.6,0L29.5-69.9l4.816,4.816a.426.426,0,0,0,.6,0,.426.426,0,0,0,0-.6L30.1-70.5l4.816-4.816A.426.426,0,0,0,34.918-75.918Z"
 								transform="translate(-23.957 76.043)"
 							/>
@@ -1138,23 +1106,10 @@
 					</svg>
 				</a>
 				<a href="https://donner.chainedelespoir.org/b?cid=244" target="_blank" class="uconc">
-					<svg
-						xmlns="http://www.w3.org/2000/svg"
-						width="9.212"
-						height="16.518"
-						viewBox="0 0 9.212 16.518"
-					>
-						<path
-							id="Path_293"
-							data-name="Path 293"
-							d="M1116.557,641.279l6.427,6.846-6.427,6.846"
-							transform="translate(-1115.144 -639.865)"
-							fill="none"
-							stroke="#F8BD13"
-							stroke-linecap="round"
-							stroke-width="2"
-						/>
-					</svg>
+					<svg xmlns="http://www.w3.org/2000/svg" width="16.82" height="14.771" viewBox="0 0 16.82 14.771">
+						<path id="Tracé_401" data-name="Tracé 401" d="M21.407,9.563c-.545-1.117-3.959-4.858-7.918.558C9.332,4.705,6.115,8.446,5.571,9.563a6.741,6.741,0,0,0,.99,6.7s5.764,5.77,6.929,5.77,6.929-5.77,6.929-5.77a6.745,6.745,0,0,0,.988-6.7Z" transform="translate(-5.079 -7.263)" fill="#f2a900"/>
+					  </svg>
+					  
 				</a>
 			</div>
 		</div>
@@ -1166,7 +1121,7 @@
 				display: flex;
 				flex-direction: row;
 				position: fixed;
-				width: 375px;
+				width: 400px;
 				height: 70px;
 				background-color: #007D8A;
 				border-radius: 13px;
@@ -1193,8 +1148,8 @@
 				align-items: center;
 				font-size: 12px;
 				margin: 8px 15px;
-				width: 305px;
-				color: #fff;
+				
+				color: #F2A900;
 			}
 			.popup__msg p {
 				margin: 0;
@@ -1203,12 +1158,12 @@
 				font-size: 12px;
 			}
 			.popup__msg span {
-				color: black;
+				color: white;
 			}
 			@media (max-width: 768px) {
 				.popup__msg {
-					font-size: 13px;
-					width: 285px;
+					font-size: 15px;
+	
 				}
 			}
 			.popup__control {
@@ -1218,7 +1173,7 @@
 				justify-content: space-between;
 				padding: 8px 0 10px;
 				position: relative;
-				width: 30px;
+				width: 90px;
 				height: 100%;
 			}
 			.popup__control:before {
@@ -1268,6 +1223,7 @@
 	<script src="js/header.js"></script>
 	<script src="js/description.js"></script>
 	<script src="js/enfant.js"></script>
-	<script src="js/alain.js"></script>
 	<script src="js/popup.js"></script>
+	<script src="js/toggle.js"></script>
+
 </html>

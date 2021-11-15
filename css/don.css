@@ -18,6 +18,8 @@
 .column_don_don_inside {
     background-color: white;
     height: 90%;
+
+    border-radius: 10px;
 }
 
 #column_don_don_left {
@@ -48,7 +50,6 @@
     padding-left: 20px;
     padding-right: 20px;
     font-size: 1.5vw;
-
     height: 200px;
     max-height: 200px;
 }
@@ -107,16 +108,26 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    background-color: #1EB189;
+    border-radius: 12px;
     margin-top: 41px;
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    padding: 20px 0px;
 }
+
+@media(max-width:1000px){
+    .container-text-don {
+        flex-direction: column;
+    }
+}
+
+
 
 .container-text-don .plafond {
     max-width: 445px;
-    font-size: 21px;
+    font-size: 17px;
     line-height: 1.1;
     margin: 0;
     text-transform: uppercase;
@@ -127,6 +138,16 @@
     font-size: 20px;
     line-height: 1.1;
     margin: 0;
+}
+
+.vous-pouvez{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.plafond .vous-pouvez{
+
 }
 
 .container-text-don img {
@@ -148,6 +169,23 @@
     display: block;
 }
 
+.deduc-fisc-prix{
+    font-size: 2vw;
+    line-height: 1;
+    color: #1EB189;
+    font-weight: bold;
+}
+
+.deduc-fisc{
+    font-size: 1.5vw;
+    line-height: 1;
+    color: #1EB189;
+    font-weight: bold;
+    padding: 0px 10% 20px;
+}
+
+
+
 @media(max-width:1436px) {
     .showTransition {
         display: inline;
@@ -156,15 +194,22 @@
 
 @media(min-width:1600px) {
     .description_column_don {
-        height: 300px;
-        max-height: 300px;
+        height: 225px;
+        max-height: 225px;
     }
 }
 
 @media(max-width:1200px) {
     .description_column_don {
-        height: 155px;
-        max-height: 155px;
+        height: 125px;
+        max-height: 125px;
+    }
+}
+
+@media(max-width:770px) {
+    .description_column_don {
+        height: 160px;
+        max-height: 160px;
     }
 }
 
@@ -178,9 +223,10 @@
     #link_don {
         width: 100%;
     }
-    .description_column_don {
+    .description_column_don, .deduc-fisc, .deduc-fisc-prix {
         font-size: 4vw;
     }
+   
     .column_don_don {
         margin-bottom: 50px;
     }
@@ -206,9 +252,10 @@
 }
 
 @media screen and (max-width: 540px) {
-    .description_column_don {
+    .description_column_don, .deduc-fisc, .deduc-fisc-prix{
         font-size: 5vw;
     }
+   
     .reduc_don {
         font-size: 3vw;
         padding-left: 20px;
