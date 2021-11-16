@@ -95,10 +95,7 @@
 }
 
 .expand > img{
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    right: 0;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -111,10 +108,7 @@
 
 .expand > svg{
     cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    left: 0;
-    right: 0;
+    
     margin-left: auto;
     margin-right: auto;
     transition: all 0.5s ease-in-out;
@@ -143,13 +137,16 @@
 
 .appel{
     color: #F2A900;
+    text-align:center;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
+  
 }
 
 .appel1{
+    text-align: center;
     font-weight: bold;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 @media(max-width:500px){

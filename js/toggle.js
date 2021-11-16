@@ -5,7 +5,11 @@ function expand(index) {
     up.style.height = "1100px";
     
 
-    setTimeout(function(){ target.style.display = "flex";}, 500);
+    setTimeout(function(){ 
+        target.style.display = "flex";
+        up.style.height = "fit-content";
+
+}, 500);
 }
 
 function reduce(index) {
