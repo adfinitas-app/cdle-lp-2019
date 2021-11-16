@@ -117,6 +117,14 @@
     padding: 20px 20px;
 }
 
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    display: block;
+}
+
 @media(max-width:1000px){
     .container-text-don {
         flex-direction: column;
@@ -124,6 +132,14 @@
 
     .container-text-don > p {
         text-align:center;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .desktop-only {
+        display: none;
     }
 }
 
@@ -163,14 +179,6 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-}
-
-.mobile-only {
-    display: none;
-}
-
-.desktop-only {
-    display: block;
 }
 
 .deduc-fisc-prix{
@@ -246,13 +254,7 @@
         flex-direction: column;
     }
 
-    .mobile-only {
-        display: block;
-    }
-
-    .desktop-only {
-        display: none;
-    }
+    
 }
 
 @media screen and (max-width: 540px) {
