@@ -33,13 +33,12 @@
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
 		<link rel="stylesheet" type="text/css" href="css/video.css" />
 		<link rel="stylesheet" type="text/css" href="css/description.css" />
-		<link rel="stylesheet" type="text/css" href="css/espoir.css" />
+		
 		<link rel="stylesheet" type="text/css" href="css/don.css" />
-		<link rel="stylesheet" type="text/css" href="css/t-shirt.css" />
-		<link rel="stylesheet" type="text/css" href="css/stats.css" />
+		
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/basics.css" />
-		<link rel="stylesheet" type="text/css" href="css/enfant.css" />
+		
 		<link rel="stylesheet" type="text/css" href="css/toggle_menu.css" />
 		<link rel="stylesheet" type="text/css" href="css/enfants.css" />
 		<meta property="og:url" content="https://jepasselespoir.chainedelespoir.org/" />
@@ -60,13 +59,7 @@
 	</head>
 
 	<body
-		style="
-			background-image: url(assets/background_2021.png);
-			background-color: black;
-			background-size: 100% auto;
-			margin: 0px;
-			background-attachment: fixed;
-		"
+		
 	>
 		<!-- Google Tag Manager (noscript) -->
 		<noscript>
@@ -163,23 +156,27 @@
 			<form id="description">
 				<div class="row">
 					<div id="toggle_menu" class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
-						<div onclick="toggle_menu('toggle1','toggle2')" id="toggle1" class="menu-item">ILS ONT BESOIN DE VOUS</div>
-						<div onclick="toggle_menu('toggle2','toggle1')" id="toggle2" class="menu-item active">SAUVÉS GRÂCE À VOS DONS</div>
+						<div onclick="toggle_menu('toggle1','toggle2')" id="toggle1" class="menu-item active">ILS ONT BESOIN DE VOUS</div>
+						<div onclick="toggle_menu('toggle2','toggle1')" id="toggle2" class="menu-item">SAUVÉS GRÂCE À VOS DONS</div>
 					</div>
 
-					<div id="toggle1_content">
+					<div id="toggle1_content" class="active">
 						<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
 							<div class="left-speech">
-								<span>Rejoignez notre chaîne de vie et sauvez la vie d'un enfant.</span>
+								<span>Rejoignez notre chaîne de solidarité et sauvez la vie d'un enfant.</span>
 								<br />
-								<span>Chaque don compte.</span>
+								<span style="display:flex; flex-direction:row; justify-content:start; align-items:center;">
+									<svg style="margin-right:10px;"xmlns="http://www.w3.org/2000/svg" width="20.268" height="42.752" viewBox="0 0 20.268 42.752">
+									<path id="v" d="M2559,1061.328l14.4,7.532,14.841-7.859" transform="translate(-1054.242 2595.004) rotate(-90)" fill="none" stroke="#f2a900" stroke-linecap="round" stroke-width="10"/>
+								  </svg>
+								  Chaque don compte.</span>
 							</div>
 							<hr>
 							<div class="right-speech">
 								<span>
 									Près des deux-tiers de la population mondiale n’ont pas accès aux soins chirurgicaux, et parmi eux des milliers d’enfants. 
 									La Chaîne de l’Espoir agit depuis plus de 
-									20 ans pour sauver la vie de ces enfants,
+									25 ans pour sauver la vie de ces enfants,
 									pour que tous, où qu’ils naissent, accèdent
 									aux soins.
 								</span>
@@ -208,13 +205,13 @@
 										<div class="cout-op">Coût de l’opération :&nbsp;</div>
 										<div class="patho">2 000 €</div>
 									</div>
-									Mong est née avec une malformation cardiaque congénitale. 
+									Mông est née avec une malformation cardiaque congénitale. 
 									Son hypertrophie ventriculaire gauche met sa vie en danger. 
-									Très fragile, Mong, accompagnée par sa maman, est actuellement au pavillon des Enfants pour une série d’examens préopératoires. 
-									L’opération chirurgicale qui pourrait guérir Mong est possible. 
+									Très fragile, Mông, accompagnée par sa maman, est actuellement au Pavillon des Enfants pour une série d’examens préopératoires. 
+									L’opération chirurgicale qui pourrait guérir Mông est possible. 
 									<br />
 									<br />
-									La Chaine de l’Espoir est mobilisée.
+									La Chaîne de l’Espoir est mobilisée.
 									<br />
 									<br /> 
 									<div class="appel">Aidez-nous ! Passez l’espoir pour Mông, faites un don.</div>
@@ -312,8 +309,7 @@ l’empêche de plier son bras.
 									<br />
 En plus d’une douleur vive et persistante, sa plaie a beaucoup de mal à cicatriser. 
 Sans opération chirurgicale avec greffe de peau, Sourou restera handicapé et grandira 
-sans pouvoir plier son bras. La Chaîne de l’Espoir est mobilisée. Aidez-nous ! Passez 
-l’espoir pour Sourou, faites un don.
+sans pouvoir plier son bras. 
 									<br />
 									<br />
 									La Chaîne de l’Espoir est mobilisée.
@@ -359,7 +355,7 @@ l’espoir pour Sourou, faites un don.
 										<div class="cout-op">Coût de l’opération&nbsp;:&nbsp;</div>
 										<div class="patho">3&nbsp;000&nbsp;€</div>
 									</div>
-									Seulement 15 jours après sa naissance, Fara toussait beaucoup. Puis les difficultés respiratoires n’ont cessé d’augmenter. Après consultation à l’hôpital Ambohimiandra, un souffle cardiaque fut décelé puis un examen plus approfondi par écho doppler confirma le diagnostic, grave: Fara souffre d’une Persistance du Canal Artériel. Depuis la découverte de la cardiopathie dont souffre leur fille, les parents de Fara espèrent du fond du coeur que Fara pourra être opérée.
+									Seulement 15 jours après sa naissance, Fara toussait beaucoup. Puis les difficultés respiratoires n’ont cessé d’augmenter. Après consultation à l’hôpital Ambohimiandra, un souffle cardiaque fut décelé puis un examen plus approfondi par écho doppler confirma le diagnostic, grave: Fara souffre d’une Persistance du Canal Artériel. Depuis la découverte de la cardiopathie dont souffre leur fille, les parents de Fara espèrent du fond du coeur qu'elle pourra être opérée.
 									<br />
 									<br />
 									La Chaîne de l’Espoir est mobilisée. 
@@ -386,19 +382,19 @@ l’espoir pour Sourou, faites un don.
 							
 						</div>
 					</div>
-					<div id="toggle2_content" class="active">
+					<div id="toggle2_content" >
 
 						<div class="intro-content col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1">
 							<div class="left-speech">
-								<span>Grâce à votre soutien, La Chaîne de l’Espoir a pu opérer ces 4 enfants.</span>
+								<span>Grâce à votre soutien, La Chaîne de l’Espoir a pu opérer ces 5 enfants.</span>
 								<br />
 								<span>Découvrez leur histoire.</span>
 							</div>
 							<hr>
 							<div class="right-speech">
 								<span>
-								La Chaîne de l’Espoir accueille et soigne des enfants en France mais intervient également dans de nombreux pays lorsque les infrastructures opératoires le permettent. 
-								Chaque année, plus de 200 000 enfants bénéficient des actions menées par La Chaîne de l’Espoir et plus de 4 000 enfants sont opérés lors des 170 missions terrain.
+								La Chaîne de l’Espoir accueille et soigne des enfants en France et intervient surtout dans de nombreux pays lorsque les infrastructures opératoires le permettent. 
+								Chaque année, plus de 210 000 enfants bénéficient des actions menées par La Chaîne de l’Espoir et plus de 4 600 enfants sont opérés lors des 290 missions terrain.
 								</span>
 							</div>
 						</div>
@@ -425,10 +421,10 @@ l’espoir pour Sourou, faites un don.
 									Souffrant d’un problème cardiaque grave, Olanda a pu être opérée à cœur ouvert en 2013 à Haïti par les équipes de La Chaîne de l’Espoir. 
 									<br />
 									<br />
-Aujourd’hui elle a désormais 9 ans et est en pleine forme. 
+Aujourd’hui elle a 9 ans et est en pleine forme. 
 									<br />
 									<br />
-Mais d’autres enfants sont actuellement en attente de pouvoir être opérés et sauvés.
+D’autres enfants sont en attente de l'opération qui les sauvera.
 									<br />
 									<br />
 									<div class="appel1">Votre don changera leur destin.</div>
@@ -449,7 +445,7 @@ Mais d’autres enfants sont actuellement en attente de pouvoir être opérés e
 							<div class="enfant-item" >
 								<img class="enfant-photo" src="./assets/Bissie_Eyenga.jpg">
 								<div class="enfant-info">
-									<span style="color:#008895;">Bissie & Eyenga</span><br />
+									<span style="color:#008895;">BISSIE & EYENGA</span><br />
 									2 ans, Cameroun
 								</div>
 								<div class="discover" onclick="expand('enfant_22')">
@@ -464,13 +460,13 @@ Mais d’autres enfants sont actuellement en attente de pouvoir être opérés e
 										<div class="patho">nées soeurs siamoises, unies par le foie et
 											la base du thorax</div>
 									</div>
-									Une véritable chaîne de solidarité orchestrée par La Chaîne de l’Espoir s’est mise en place avec l’hôpital de Yaoundé, au Cameroun, les Hospices Civils de Lyon, et nos équipes chirurgicales bénévoles. 
+									Une véritable chaîne de solidarité orchestrée par La Chaîne de l’Espoir s’est mise en place pour Bissie et Eyenga, soeurs siamoises unies par le fois et la base du thorax. L’hôpital de Yaoundé, au Cameroun, les Hospices Civils de Lyon, et nos équipes chirurgicales bénévoles ont, ensemble réussi un exploit médicale et humain. 
 									<br />
 									<br />
 Après leur arrivée en France, deux opérations consécutives ont été nécessaires. La première a permis de séparer Bissie de sa soeur Eyenga.
 									<br />
 									<br />	
-La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous recevons depuis régulièrement des nouvelles de ces deux fillettes pleine de vie. Mais d’autres enfants sont actuellement en attente de pouvoir être opérés et sauvés.
+La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous recevons depuis régulièrement des nouvelles de ces deux fillettes pleines de vie. Mais d’autres enfants sont actuellement en attente de pouvoir être opérés et sauvés.
 									<br />
 									<br />
 									<div class="appel1">Votre don changera leur destin.</div>
@@ -506,7 +502,7 @@ La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous
 										<div >Pathologie&nbsp;:&nbsp;</div>
 										<div class="patho">sténose aortique</div>
 									</div>
-									Malgré les terribles explosions qui détruisent le port de Beyrouth au Liban, Le Pr Jébara, chirurgien cardiaque, formé par la Chaîne de l’Espoir, réussit à opérer Kami d’une grave malformation du cœur.
+									Malgré les terribles explosions qui détruisent le port de Beyrouth au Liban, Le Pr Jébara, chirurgien cardiaque, formé par La Chaîne de l’Espoir, réussit à opérer Kami d’une grave malformation du cœur.
 									<br />
 									<br />
 									Kami est aujourd’hui guéri, il vit avec ses parents et ses sœurs dans le Nord du pays où il a repris l’école. 
@@ -553,8 +549,6 @@ La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous
 										<div class="patho">Fente labiale</div>
 									</div>
 									Encore synonyme de malédiction dans de nombreux pays notamment en Afrique, la fente labiale (communément appelée
-									<br />
-									<br />
 									« bec de lièvre ») dont souffrait Yeleen a été réparée.
 									<br />
 									<br />
@@ -640,7 +634,7 @@ La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous
 													</div>
 													<div class="deduc-fisc">
 														<span class="deduc-fisc-prix">soit 15 € </span><br />
-														après déduction fiscale de 75 %
+														après réduction fiscale de 75 %
 													</div>
 												</div>
 												<div
@@ -707,7 +701,7 @@ La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous
 													</div>
 													<div class="deduc-fisc">
 														<span class="deduc-fisc-prix">soit 21 € </span><br />
-														après déduction fiscale de 75 %
+														après réduction fiscale de 75 %
 													</div>
 												</div>
 												<div
@@ -776,7 +770,7 @@ La seconde, concernait une maladie du cœur sévère dont souffrait Bissie. Nous
 													</div>
 													<div class="deduc-fisc">
 														<span class="deduc-fisc-prix">soit 30 € </span><br />
-														après déduction fiscale de 75 %
+														après réduction fiscale de 75 %
 													</div>
 												</div>
 												

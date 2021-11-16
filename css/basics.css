@@ -76,4 +76,20 @@ html, body {
     display: none;
 }
 
+body{
+    background-image: url(../assets/background_2021.png);
+    background-color: black;
+    background-size: 100% auto;
+    margin: 0px;
+    background-attachment: fixed;
+}
+
+@media(max-width:780px){
+    body{
+        background-image: url(../assets/background_2021_mobile.png);
+        background-size: cover;
+    }
+    
+}
+
 
