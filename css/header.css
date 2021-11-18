@@ -8,8 +8,31 @@
     position: fixed;
     right: 50px;
     top: 50px;
+    border-radius:50px;
     text-align: center;
+    box-shadow: 0 0 0 0 #F2A90050;
+    -webkit-animation: pulse 1.5s infinite;
 }
+
+
+#sticky_don:hover{
+    -webkit-animation: none;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+      @include transform(scale(.9));
+    }
+    70% {
+      @include transform(scale(1));
+      box-shadow: 0 0 0 50px #F2A90000;
+    }
+      100% {
+      @include transform(scale(.9));
+      box-shadow: 0 0 0 0 #F2A90000;
+    }
+  }
+
 
 #don_button_header {
     width: 100%;
