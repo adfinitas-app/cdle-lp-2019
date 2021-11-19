@@ -1,6 +1,5 @@
 #toggle_menu{
     margin-top: 50px;
-    margin-bottom:50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -76,6 +75,7 @@
     justify-content: center;
     align-items:center;
     height: fit-content;
+    padding: 0px 20px;
     margin-bottom: 50px;
 }
 
@@ -105,6 +105,10 @@
  .left-speech > span:nth-of-type(2){
     font-size: 40px;
     color: #F2A900;
+    display:flex; 
+    flex-direction:row; 
+    justify-content:start; 
+    align-items:center;
  }
 
  .right-speech > span{
@@ -173,6 +177,7 @@
 
      .left-speech > span:nth-of-type(2){
         font-size: 25px;
+        justify-content: center;
      }
  }
 
